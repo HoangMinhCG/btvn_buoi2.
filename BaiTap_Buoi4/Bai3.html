@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai3</title>
+  </head>
+  <body>
+    <header><h1>Form khảo sát ý kiến</h1></header>
+    <main>
+      <form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+        <div>
+          <label for="fullname">Họ tên:</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder=""
+            value=""
+          />
+        </div>
+
+        <div>
+            <label for="satisfaction">Mức độ hài lòng:</label>
+            <input type="range" name="satisfaction" id="satisfaction">
+        </div>
+
+        <div>
+            <label for="time_contact">Thời gian liên hệ:</label>
+            <input type="time" name="time_contact" id="time_contact">
+        </div>
+
+        <div>
+            <label>Kênh thông tin:</label>
+            <label><input type="checkbox" name="social_network" value="Facebook">Facebook</label>
+            <label><input type="checkbox" name="social_network" value="Youtube">Youtube</label>
+            <label><input type="checkbox" name="social_network" value="Website">Website</label>
+        </div>
+
+        <div>
+            <label for="other_comments">Góp ý khác:</label>
+            <div><textarea name="other_comments" id="other_comments"></textarea></div>
+        </div>
+      </form>
+    </main>
+    <footer>
+        <button type="send">Gửi</button>
+    </footer>
+  </body>
+</html>

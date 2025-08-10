@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai5</title>
+  </head>
+  <body>
+    <header><h1>Form liên hệ nhiều bước</h1></header>
+    <main>
+      <form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+        <fieldset>
+          <legend>Thông tin cá nhân</legend>
+          <div>
+            <label for="name">Họ tên:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="" />
+          </div>
+
+          <div>
+            <label for="numberphone">Số điện thoại:</label>
+            <input
+              type="number"
+              name="numberphoner"
+              id="numberphone"
+              placeholder=""
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Thông tin yêu cầu</legend>
+          <div>
+            <label for="support_required">Loại yêu cầu:</label>
+            <select name="support_required" id="support_required">
+              <option value="0">Hỗ trợ kĩ thuật</option>
+              <option value="1">Báo lỗi</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="describe">Mô tả:</label>
+            <div><textarea name="describe" id="describe"></textarea></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Thông tin bổ sung</legend>
+          <div>
+            <label for="receive_email"
+              ><input
+                type="checkbox"
+                name="receive_email"
+                id="receive_email"
+              />Nhận email khuyến mãi</label
+            >
+          </div>
+
+          <div>
+            <label>Cách liên hệ:</label>
+            <label
+              ><input type="radio" name="contact" value="email" />Email</label
+            >
+            <label
+              ><input type="radio" name="contact" value="number_phone" />Điện
+              thoại</label
+            >
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <button type="send_information">Gửi thông tin</button>
+    </footer>
+  </body>
+</html>

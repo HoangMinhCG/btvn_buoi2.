@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai6</title>
+  </head>
+  <body>
+    <header>
+      <table width="50%" style="font-size: 32px">
+        <tr>
+          <th>Novell Services Login</th>
+        </tr>
+      </table>
+    </header>
+    <main>
+      <form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+        <table>
+          <tr>
+            <td><label for="fullname">Username:</label></td>
+            <td><input type="text" name="fullname" id="fullname" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder=""
+                value=""
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="City">City of employment:</label></td>
+            <td>
+              <input
+                type="text"
+                name="City"
+                id="City"
+                placeholder=""
+                value=""
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="web_server">Web server:</label></td>
+            <td>
+              <select name="web_server" id="web_server">
+                <option value="0">--Choose a server</option>
+                <option value="1">Microsoft IIS</option>
+                <option value="2">Lighttpd</option>
+                <option value="3">Apache Tomcat</option>
+                <option value="4">Nginx</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Please specify your role:</label></td>
+            <td>
+              <label><input type="radio" name="job" value="Admin" />Admin</label
+              ><br />
+              <label
+                ><input
+                  type="radio"
+                  name="job"
+                  value="Engineer"
+                />Engineer</label
+              ><br />
+              <label
+                ><input type="radio" name="job" value="Manager" />Manager</label
+              ><br />
+              <label
+                ><input type="radio" name="job" value="Guest" />Guest</label
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Single Sign-on to the following:</label></td>
+            <td>
+              <label
+                ><input
+                  type="checkbox"
+                  name="login_method"
+                  value="Mail"
+                />Mail</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="login_method"
+                  value="Payroll"
+                />Payroll</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="login_method"
+                  value="Self-service"
+                />Self-service</label
+              >
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <footer>
+      <table width="50%">
+        <tr>
+          <th>
+            <button type="Login">Login</button>
+            <button type="Reset">Reset</button>
+          </th>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

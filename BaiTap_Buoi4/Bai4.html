@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai4</title>
+</head>
+<body>
+    <header><h1>Form đăng nhập + 2FA</h1></header>
+    <main>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="emai" id="emai">
+        </div>
+
+        <div>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+            <label for="otp_code">Mã otp:</label>
+            <input type="number" name="otp_code" id="otp_code">
+        </div>        
+    </form>
+    </main>
+    <footer>
+        <button type="register">Đăng ký</button>
+        <button type="cancel">Huỷ</button>
+    </footer>
+</body>
+</html>

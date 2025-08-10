@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai1</title>
+  </head>
+  <body>
+    <header><h1>Form đăng ký tài khoản</h1></header>
+    <main>
+      <form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+        <div>
+          <label for="lbl-fullname">Họ tên:</label>
+          <input
+            type="text"
+            name="fullname"
+            id="lbl-fullname"
+            placeholder=""
+            value=""
+          />
+        </div>
+        <div>
+          <label for="lbl-email">Email:</label>
+          <input type="email" name="email" id="lbl-email" placeholder="" />
+        </div>
+
+        <div>
+          <label for="lbl-password">Mật khẩu:</label>
+          <input type="number" name="number" id="lbl-password" placeholder="" />
+        </div>
+
+        <div>
+          <label for="lbl-birthday">Ngày sinh:</label>
+          <input
+            type="date"
+            name="birthday"
+            id="lbl-birthday"
+            placeholder="birthday"
+          />
+        </div>
+
+        <div>
+          <label>Giới tính:</label>
+          <label> <input type="radio" name="gender" value="male" />Nam </label>
+          <label>
+            <input type="radio" name="gender" value="female" /> Nữ
+          </label>
+          <label>
+            <input type="radio" name="gender" value="Other" /> Khác
+          </label>
+        </div>
+
+        <div>
+          <label>Sở thích:</label>
+          <label>
+            <input type="checkbox" name="sothich" value="read_book" /> Đọc sách
+          </label>
+          <label>
+            <input type="checkbox" name="sothich" value="holiday" />Du lịch
+          </label>
+          <label>
+            <input type="checkbox" name="sothich" value="sport" /> Thể thao
+          </label>
+        </div>
+
+        <div>
+          <div><label for="introduce">Mô tả bản thân:</label></div>
+          <textarea name="introduce" id="introduce" placeholder=""></textarea>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <button type="register">Đăng ký</button>
+      <button type="delete">Xoá</button>
+    </footer>
+  </body>
+</html>
