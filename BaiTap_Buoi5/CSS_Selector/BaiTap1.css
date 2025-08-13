@@ -1,0 +1,19 @@
+h1{
+    color: red;
+}
+
+.highlight{
+    color: green;
+}
+
+#special{
+    text-decoration: underline;
+}
+
+.box p{
+    background-color: yellow;
+}
+
+ul > li{
+    border: solid 2px #000;
+}
