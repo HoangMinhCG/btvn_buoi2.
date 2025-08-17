@@ -17,3 +17,4 @@ ol li:last-child{
 li:nth-child(odd){
     background-color: gray;
 }
+

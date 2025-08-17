@@ -31,3 +31,26 @@ P + h2 + h2 + h2,
 P + h2 + h2 + h2 + h2{
     color: red;
 }
+
+/* input[id="green"]:checked + p{
+    color: green;
+}
+
+label[for="green"]:checked + p{
+    color: green;
+} */
+
+#red:checked ~ nav label[for="red"],
+#red:checked ~ p{
+    color: red;
+}
+
+#green:checked ~ nav label[for="green"],
+#green:checked ~ p{
+    color: green;
+}
+
+#blue:checked ~ nav label[for="blue"],
+#blue:checked ~ p{
+    color: blue;
+}
