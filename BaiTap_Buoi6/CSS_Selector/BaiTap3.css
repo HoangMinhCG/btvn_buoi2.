@@ -1,0 +1,13 @@
+*{      
+    font-family: Georgia, serif;
+}
+
+h1{
+    text-align: center;
+    color: #bd3a2b;
+}
+
+p::first-letter{
+    font-size: 28px;
+    color: #bd3a2b;
+}

@@ -5,8 +5,8 @@
 }
 
 body{
-    margin-left: 180px;
-    margin-right: 180px;   
+    margin-left: 30%;
+    margin-right: 30%;   
 }
 
 h1, tr td:last-child{
@@ -22,9 +22,8 @@ td:last-child{
     font-weight: 700;
 }
 
-tr:hover{
-    background-color: rgb(252 245 237, 0.6);
-    background-color: orange;
+tr:hover{    
+    background-color: #f9ccac;
 }
 
 td{
@@ -33,7 +32,3 @@ td{
     background-color: transparent;
 }
 
-table{
-    /* width: 60%; */
-    /* text-align: center; */
-}
