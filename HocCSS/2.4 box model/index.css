@@ -1,0 +1,6 @@
+p{
+    border-style: dashed;
+    border-color: red green;
+    /* max-width: 400px; */
+    width: 80%;
+}

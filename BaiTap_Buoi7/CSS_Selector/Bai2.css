@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    font-size: 10px;
+}
+
+header{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.2em;
+    margin-bottom: 0.3em;
+}
+
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.service{
+    width: 31%;
+    display: inline-block;
+    margin: 0 0 4em;
+    padding: 0 1em;
+}
+
+img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h3{
+    font-size: 2em;
+}
+
+.service p{
+    height: 6em;
+    margin-top: 1em;
+    opacity: 0.5;
+}
+
+h3, p, button{
+    text-align: center;
+}
+
+button{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    
+    background-color: #243992;
+    padding: 0.5em 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #dae3f9;
+}
