@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{    
+    color: #333;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 0.8em 3em;
+}
+
+.header_title{
+    display: flex;
+    margin: 0 auto; /* để phần text nằm giữa */
+    gap: 10px;
+}
+
+.header_title p{
+    color: #d8d8d8;    
+}
+
+.header_title a{
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.logo{
+    gap: 10px
+}
+
+.logo a{
+    color: #dedede;    
+}
+
+.logo i{
+    color: #f4f4f4;
+}
+
+/* End header */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    border-bottom: solid #e0e0e0;   
+    align-items: flex-end;
+}
+
+.navigation > a{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.navigation_sub{
+    display: flex;
+    gap: 20px 40px;
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+    color: #030303;
+}
+
+.nav_logo{
+    display: flex;    
+    gap: 0px;
+    align-items: flex-end;
+}
+
+.nav_logo > form{
+    background-color: #f5f5f5;
+    height: 100%;    
+}
+
+.nav_logo > form > input{
+    border: none;
+    background-color: #f5f5f5;
+    padding: 5px;
+    height: 100%;
+}
+
+.nav_logo > form > button{
+    padding: 5px;    
+    border: none;
+    background-color: #f5f5f5;    
+    height: 100%;
+}
+
+.nav_logo > form > button:hover,
+.nav_logo > a:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.066);   
+}
+
+.nav_logo    a{
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+/* End nav */
+main{
+    display: flex;
+}
+
+.nav_bar{
+    display: flex;
+}
+
+.nav_bar > ul{
+    border-right: solid #e0e0e0;
+    padding: 20px 40px;
+}
+
+.nav_bar > ul > li{
+    padding: 60px auto;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.image{
+    width: 75%;
+}
+
+.image img{
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
