@@ -124,6 +124,7 @@ main{
 .nav_bar > ul{
     border-right: solid #e0e0e0;
     padding: 20px 40px;
+    padding-right: 20px;
 }
 
 .nav_bar > ul > li{
@@ -131,6 +132,8 @@ main{
     text-decoration: none;
     list-style: none;
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .image{
