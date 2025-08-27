@@ -104,6 +104,7 @@ a{
     background-color: rgb(35 161 209);
     width: 7em;   
     cursor: pointer;
+    border-bottom: solid 1px white;
 }
 
 .sub_nav li:hover{
