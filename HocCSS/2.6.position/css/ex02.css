@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    background-color: rgb(220, 213, 213, 0.6);
+    text-align: center;
+    margin: auto 0;    
+    z-index: 99;
+}
+
+#modal_toggle:checked + .modal{
+    display: block;
+}
+
+.modal_sub{
+    position: absolute;
+    top: 50px;
+    right: 30%;
+    left: 30%;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    z-index: 100;
+}
+
+.modal_sub .modal_dialog{
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.6px gray;    
+}
+
+.modal_sub .modal_dialog h1{
+    margin: 0 auto;
+}
+
+.modal_sub p{
+    margin-top: 10px;
+}

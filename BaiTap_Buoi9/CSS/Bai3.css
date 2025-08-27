@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{    
+    line-height: 1.4;
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif
+}
+
+header{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+header .red_color{
+    background-color: red;
+    font-size: 1.5em;
+    color: red;
+    margin-right: 10px;
+}
+
+header h2{
+    color: red;  
+    font-size: 1em;
+    margin: auto 0;
+}
+
+/* end header */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
+    align-items: flex-end;
+}
+
+nav > p{
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+.nav_button i{
+    padding: 0.8em;
+    padding-right: 1.9em;
+    border-radius: 70px;
+    background-color: #f5f5f5;
+}
+
+.nav_button i:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+/* end nav */
+
+.row1,
+.row2{
+    display: flex;
+    gap: 30px;  
+}
+
+.item{
+    width: 25%;
+    
+}
+
+.item .image{
+    position: relative;
+    cursor: pointer;
+}
+
+.item img{
+    width: 100%;    
+}
+
+.item h2{
+    width: 100%;
+    font-size: 1em;
+    /* display: inline-block; */
+}
+
+.item .item_cost{
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+    margin: 0.3em 0;
+}
+
+.item .item_cost >  p{
+    color: red;
+}
+
+.item_evaluate{
+    display: flex;
+    gap: 3px;   
+}
+
+.item_evaluate i{
+    padding-top: 3px;   
+    color: #fbac25; 
+}
+
+.item_evaluate > p{
+    margin-left: 3px;
+    color: #a0a0a0;
+}
+
+.item_hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item img:hover + .item_hover{
+    display: block;
+}
+
+/* end main */
+
+button{
+    color: white;
+    background-color: rgb(244, 93, 93);
+    padding: 1em 2em;
+    margin: 2em auto;
+    width: 30%;
+    text-align: center;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.item > span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.button_red{
+    background-color: red;
+}
+
+.button_yellow{
+    background-color: yellow;
+}
+
+.button_green{
+    background-color: green;
+}
+
+.button_black{
+    background-color: rgb(153, 151, 151);
+}
+
+.checked{
+    border: solid 3px black;
+}
