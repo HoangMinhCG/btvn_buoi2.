@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-image: url(../IMG/Bai1/background.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+}
+
+.box{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.description{
+    color: white;
+    width: 40%;
+    padding: 40px 100px;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 60px;
+}
+
+.description > h2{
+    font-size: 1.4rem;
+}
+
+.description > h1{
+    font-size: 7rem;
+    font-weight: 900;
+    margin-top: -20px;
+}
+
+.description > p{
+    margin: 18px 0;
+}
+
+.description > .button{
+    margin-top: 40px;
+}
+
+.button{
+    display: flex;  
+    justify-content: center;     
+}
+
+.button label{
+    border: white solid 1px;
+    margin-top: 4rem;
+    padding: 1rem 5rem;
+}
+
+.button .login_btn{
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+}
+
+.button .register_btn{
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+#login_btn:checked ~ .description .button .login_btn{
+    background-color: white;
+    transition: linear 0.2s;
+    color: #333;
+}
+
+#login_btn:checked ~  .form-1{
+    /* display: block; */
+    transition: all linear 0.6s;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+#register_btn:checked ~ .description .button .register_btn{
+    background-color: white;
+    color: #333;
+    transition: linear 0.2s;
+}
+
+#register_btn:checked ~  .form-2{
+    transition: all linear 0.6s;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.form-1{
+    color: white;
+    width: 25%;
+    padding: 40px 30px;
+    text-align: center;
+    margin-top: 120px;
+    margin-right: 120px;
+    background-color: white;
+    /* display: none; */
+    border-radius: 15px;
+    position: absolute;
+    right: -70px;
+    transition: all linear 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-1 h2{
+    color: #333;
+    margin-bottom: 4rem;
+    font-size: 2em;
+}
+
+.form-1 .input{
+    margin: 10px;
+    width: 95%;
+    /* font-size: 2.7rem; */
+    border: solid 0.1px #dedeea;
+    border-radius: 5px;
+    padding: 1.1rem 2rem;
+}
+
+.form-1 .feature{
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1.1em;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.form-1 .feature .remember{
+    display: flex;
+    gap: 0.5rem;
+   
+}
+
+.form-1 .feature .remember label{
+    font-style: bold;
+    font-weight: 700;
+    padding: 0.1rem 0;
+}
+
+.form-1 .feature > a{
+    opacity: 0.8;
+    text-decoration: none;
+    color: #333;
+}
+
+.lined_text{
+    color: #333;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.lined_text::after,
+.lined_text::before{
+    content: "";
+    width: 6rem;
+    height: 1px;
+    background-color: #eaeaf5;
+    position: absolute;
+    top: 7px;
+}
+
+.lined_text::before{
+    left: 0;
+}
+
+.lined_text::after{
+    right: 0;
+}
+
+.btn{
+    background-color: #615dfa;
+    color: white;
+    padding: 1em 3em;
+    width: 92%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.social{
+    width: 95%;
+    
+}
+
+.social a{
+    margin: 0 .7rem;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+.social_facebook{
+    background-color: #3763d2;
+}
+
+.social_twitter{
+    background-color: #1abcff;    
+}
+
+.social_twitch{
+    background-color: #7b5dfa;
+}
+
+.social_youtube{
+    background-color: #fd434f;
+}
+
+.form-2{
+    /* display: none;    */
+    color: white;
+    width: 25%;
+    padding: 40px 30px;
+    text-align: center;
+    margin-top: 120px;
+    margin-right: 120px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    position: absolute;
+    right: -70px;
+    transition: all linear 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-2 h2{
+    color: #333;
+    margin-bottom: 5rem;
+    font-size: 2em;
+}
+
+.form-2 .input{
+    margin: 10px;
+    width: 95%;
+    border: solid 0.1px #dedeea;
+    border-radius: 8px;
+    padding: 1.1rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.form-2 .feature-2{
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1.1em;
+     margin: 1rem 0;
+    /* gap: 10px; */
+}
+
+.form-2 .feature-2 .remember-2{
+    display: flex;
+    gap: 0.5rem;
+   
+}
+
+.form-2 .feature-2 .remember-2 label{
+    font-style: bold;
+    font-weight: 700;
+    padding: 0.1rem 0;
+}
+
+.form-2 .feature-2 > a{
+    opacity: 0.8;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn-2{
+    background-color: #23d2e2;
+    color: white;
+    padding: 1em 3em;
+    width: 92%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.form-2 p{
+    color: #333;
+    margin-top: 1.8rem;
+}
+
+.form-2 p a{
+    text-decoration: none;
+    color: #23d2e2;
+}
+/* 
+.form-2 .input::placeholder{
+    position: absolute;
+    top: -10px;
+    z-index: 100;
+} */
+
+/* ------------------ */
+
+.input-item{
+    position: relative;
+}
+
+.label-item{
+    position: absolute;
+   
+    z-index: 1;
+    top: 16px;
+    left: 30px;
+
+    display: inline-block;
+    color: #666565;
+    font-size: 16px;
+    background: #fff;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.input:focus + .label-item,
+.input:not(:placeholder-shown) + .label-item
+{
+    top: -2px;
+}

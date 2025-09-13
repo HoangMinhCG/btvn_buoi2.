@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-color: #111114;
+  color: #fffeff;
+  
+}
+
+/* common */
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* start nav */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  margin-top: 2rem;
+  max-width: 1440px;
+}
+
+.nav .nav_list {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.nav .nav_list li {
+  list-style: none;
+}
+
+.nav .nav_list li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  font-size: 1.6rem;
+}
+
+.nav .nav_list li:nth-child(2) a {
+  color: var(--Dark-Orange, #fb8f2c);
+}
+
+.nav .nav_logo img {
+  height: 100%;
+  align-items: center;
+}
+
+.nav .nav_function {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.nav .nav_function a {
+  color: #fff;
+}
+
+/* end nav */
+
+/* start main */
+
+/* start product */
+.product {
+  margin-top: 8rem;
+  margin-bottom: 7rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.product img {
+  width: 50%;
+}
+
+.product .product_info {
+  width: 50%;
+}
+
+.product .product_info h2 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.4rem;
+  text-transform: capitalize;
+}
+
+.product .product_info .evaluate {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.product .product_info .evaluate .star {
+  display: flex;
+  color: #ffca0e;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.product .product_info .evaluate p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.product .product_info .cost {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+.product .product_info .desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 1rem 0;
+}
+
+.product .product_info .add_product {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.add_product .btn {
+  border: solid rgba(255, 255, 255, 0.8) 0.5px;
+  display: flex;
+  align-items: center;
+}
+.add_product .btn button {
+  width: 55px;
+  height: 100%;
+  background-color: #111114;
+  color: #fff;
+  /* padding: 1.2rem 2rem; */
+  border: none;
+  cursor: pointer;
+}
+
+.add_product .btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1.75rem 2.5rem; */
+  width: 100px;
+  height: 100%;
+  border-left: solid rgba(255, 255, 255, 0.8) 0.5px;
+  border-right: solid rgba(255, 255, 255, 0.8) 0.5px;
+}
+
+.add_product > button {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.6rem;
+  background: #fb8f2c;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.product_info .note{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.product_info .note b{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+/* end product */
+
+/* start Description */
+.title{
+    display: flex;
+    gap: 2rem;    
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    z-index: -10;    
+  position: relative;
+}
+
+.title h3{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.8rem;
+    position: relative;
+}
+
+.title h3:first-child:before{
+  content: "";
+  background-color: #FB8F2C;
+  height: 1px;
+  bottom: -10px;
+  left: 0;
+  right: 0%;
+  position: absolute;
+}
+
+.title::before{
+  content: "";
+  background-color: rgba(255, 255, 255, 0.80);
+  display: block;
+  height: 1px;  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* .title h3:first-child{
+    border-bottom: #FB8F2C solid 1px;
+    height: 100%;
+}
+
+.title h3:last-child{
+    display: inline-block;  
+    width: 100%;  
+    height: 100%;
+    border-bottom: rgba(255, 255, 255, 0.80) 0.5px solid;
+} */
+
+.title_content{
+  margin-top: 5rem;
+}
+
+.title_content p{
+    color:  rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; 
+}
+
+.title_content p:first-child{
+    margin-bottom: 3rem;
+}
+/* end Description */
+
+/* start menu */
+.menu {
+  margin-top: 10rem;
+}
+
+.menu h1 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+}
+
+.order {
+  display: flex;
+  gap: 5rem;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.order .item {
+  width: 30%;
+}
+
+.order .item img {
+  cursor: pointer;
+}
+
+.order .item h2 {
+  margin: 2rem 0;
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.4rem; /* 141.667% */
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.order .item p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+}
+
+.order .item .line {
+  display: block;
+  opacity: 0.2;
+  background: rgba(255, 255, 255, 0.8);
+  height: 1px;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.order .item .button_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order .item .button_price a {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.order .item .button_price p {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+}
+/* end menu */
+
+/* end main */
+
+/* start footer */
+footer {
+  display: flex;
+  margin-top: 10rem;
+  gap: 3rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer_logo {
+  display: flex;
+  gap: 2rem;
+  width: 20%;
+}
+
+.footer_logo h3 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.footer_logo img {
+  width: 30%;
+  height: 30%;
+}
+
+.usefull_link,
+.follow_us {
+  width: 15%;
+}
+
+.contact_info {
+  width: 20%;
+}
+
+.usefull_link h3,
+.contact_info h3,
+.follow_us h3,
+.legal h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem; /* 130% */
+}
+
+footer ul {
+  margin-top: 3rem;
+}
+
+.usefull_link li,
+.contact_info li,
+.follow_us li,
+.legal li {
+  list-style: none;
+}
+
+.usefull_link li a,
+.contact_info li a,
+.legal li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+}
+
+.contact_info li:nth-child(2) a {
+  color: #fb8f2c;
+}
+
+.follow_us li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 25rem;
+}
+
+.download p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+  width: 80%;
+}
+
+.download .download_img {
+  display: flex;
+  color: #fff;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.download .download_img img {
+  width: 50%;
+}
+/* end footer */

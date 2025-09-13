@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai1</title>
+    <link rel="stylesheet" href="./CSS/Bai1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <!-- tính năng ẩn hết form -->
+      <input
+        type="radio"
+        name="gender"
+        value="login_btn"
+        id="login_btn"
+        hidden
+      />
+      <input
+        type="radio"
+        name="gender"
+        value="register_btn"
+        id="register_btn"
+        hidden
+        checked
+      />
+      <!-- kết thúc tính năng ẩn hết form -->
+
+      <div class="description">
+        <h2>WELCOME TO</h2>
+        <h1>VIKINGER</h1>
+        <p>
+          The next generation social network & community! Connect with your
+          friends and play with our quests and badges gamification system!
+        </p>
+
+        <div class="button">
+          <!-- <p class="login_btn">Login</p> -->
+          <label for="login_btn" class="login_btn">Login</label>
+          <label for="register_btn" class="register_btn">Register</label>
+          <!-- <p class="register_btn">Register</p> -->
+        </div>
+      </div>
+
+      <div class="form-1">
+        <h2>Account Login</h2>
+        <input
+          type="text"
+          placeholder="Username or Email"
+          class="input"
+          checked
+        />
+        <input type="text" placeholder="Password" class="input" />
+        <div class="feature">
+          <div class="remember">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button class="btn">Login to your Account</button>
+        <p class="lined_text">Login with your Social Account</p>
+        <div class="social">
+          <a href="#" class="social_facebook"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="#" class="social_twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="social_twitch"
+            ><i class="fa-brands fa-twitch"></i
+          ></a>
+          <a href="#" class="social_youtube"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="form-2">
+        <h2>Create your Account!</h2>
+        <div class="input-item">
+          <input type="text" placeholder=" " class="input" />
+          <label class="label-item" for="">Your Email</label>
+        </div>
+
+        <div class="input-item">
+          <input type="text" placeholder=" " class="input" />
+          <label class="label-item" for="">Username</label>
+        </div>
+
+        <div class="input-item">
+          <input type="text" placeholder=" " class="input" />
+          <label class="label-item" for="">Password</label>
+        </div>
+
+        <div class="input-item">
+          <input type="text" placeholder=" " class="input" />
+          <label class="label-item" for="">Repeat Password</label>
+        </div>
+        <div class="feature-2">
+          <div class="remember-2">
+            <input type="checkbox" id="remember-2" />
+            <label for="remember-2">Send me news and updates via email</label>
+          </div>
+        </div>
+
+        <button class="btn-2">Register Now!</button>
+        <p>
+          You'll receive a confirmation email in your inbox with a link to
+          activate your account. If you have any problems,
+          <a href="#">contact us</a>!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

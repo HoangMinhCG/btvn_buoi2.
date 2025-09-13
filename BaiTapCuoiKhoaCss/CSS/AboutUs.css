@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    background-color: #111114;
+    color: #fffeff;
+}
+
+/* common */
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* start nav */
+
+.nav{
+    display: flex;    
+    justify-content: space-between;
+    height: 4rem;
+    margin-top: 2rem;
+    max-width: 1440px;    
+}
+
+.nav .nav_list{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.nav .nav_list li{
+    list-style: none;
+}
+
+.nav .nav_list li a{
+    color: rgba(255, 255, 255, 0.80);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    font-size: 1.6rem;
+}
+
+.nav .nav_list li:first-child a{
+    color: #FB8F2C;
+}
+
+.nav .nav_logo img{
+    height: 100%;
+    align-items: center;
+}
+
+.nav .nav_function{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+
+}
+
+.nav .nav_function a{
+    color: #fff;    
+}
+
+/* end nav */
+
+/* start header */
+header{
+    margin-top: 6rem;
+    border-bottom: rgba(255, 255, 255, 0.30) solid 1px;
+    padding-bottom: 4rem;
+}
+
+header h1{
+    font-family: "Libre Bodoni";
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 7.4rem;
+    text-transform: capitalize;
+    width: 70%;
+}
+
+header p{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    width: 82%;
+}
+
+/* end header */
+
+/* start main */
+
+/* start story */
+.story{
+    display: flex;
+    gap: 3rem;
+    margin-top: 8rem;
+}
+
+.story .col_left{
+    width: 100%;
+}
+
+.story .col_left img:first-child{
+    width: 100%;
+}
+
+.story .col_left img:last-child{
+    margin-top: 2rem;
+    width: 80%;
+    float: right;
+}
+
+.story .col_right{
+    width: 100%;
+}
+
+.story .col_right img{
+    width: 100%;
+}
+
+.story .col_right h2{
+    width: 95%;
+    font-family: "Libre Bodoni";
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 74px; /* 115.625% */
+    text-transform: capitalize;
+    float: right;
+    color: #fff;
+    margin-top: 5rem;
+}
+
+.story .col_right p{
+    width: 95%;
+    float: right;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    color: rgba(255, 255, 255, 0.80);
+    margin-top: 3rem;
+}
+
+/* end story */
+
+/* start vision_mission */
+.vision_mission{
+    margin-top: 12rem;
+}
+
+.vision_mission h2{
+    color: #FFF;
+    text-align: center;
+    font-family: "Libre Bodoni";
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 7.4rem; /* 115.625% */
+    text-transform: capitalize;
+}
+
+
+.vision_mission p{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vision_mission .content{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_col_left .list_content{
+    display: flex;
+    gap: 3rem;
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.content_col_left .list_content .img{
+    width: 15%;
+    height: auto; 
+}
+
+.content_col_left .list_content .detail{
+    width: 70%;
+}
+
+.content_col_left .list_content .detail h3{
+    color: #FFF;
+    font-family: "Libre Bodoni";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.4rem; /* 141.667% */
+    text-transform: capitalize;
+}
+
+.content_col_left .list_content .detail p{
+    color:  rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+    margin-top: 1rem;
+    text-align: left;
+    margin: 0;
+}
+/* end vision_mission */
+
+/* start Subscribe Newsletter */
+.subscribe_newslette{
+    margin-top: 15rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.subscribe_newslette .img{
+    position: relative;
+}
+
+.subscribe_newslette .meal{    
+    width: 100%;   
+    /* position: absolute; */
+}
+
+.subscribe_newslette .star{
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+    left: -10%;
+}
+
+.subscribe_newslette .subscribe_newslette_content{
+    width: 50%;
+    margin-top: 8rem;
+}
+
+.subscribe_newslette_content h1{
+    color: #FFF;
+    font-family: "Libre Bodoni";
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 7.4rem;
+    text-transform: capitalize;
+}
+
+.subscribe_newslette_content p{
+    width: 90%;
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+}
+
+.email{
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    border-bottom: #fff solid 1px;
+    padding-bottom: 3rem;
+}
+
+.email img{
+    height: 2.5rem;
+    width: auto;
+}
+
+
+/* end Subscribe Newsletter */
+
+/* start footer */
+footer{
+    display: flex;
+    margin-top: 10rem;
+    gap: 3rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer_logo{
+    display: flex;
+    gap: 2rem;
+    width: 20%;
+}
+
+.footer_logo h3{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.footer_logo img{
+    width: 30%;
+    height: 30%;
+}
+
+.usefull_link,
+.follow_us{
+    width: 15%;
+}
+
+.contact_info{
+    width: 20%;
+}
+
+.usefull_link h3,
+.contact_info h3,
+.follow_us h3,
+.legal h3{
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.6rem; /* 130% */
+}
+
+footer ul{
+    margin-top: 3rem;
+}
+
+.usefull_link li,
+.contact_info li,
+.follow_us li,
+.legal li{
+    list-style: none;
+}
+
+.usefull_link li a,
+.contact_info li a,
+.legal li a{
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+}
+
+.contact_info li:nth-child(2) a{
+    color: #FB8F2C;
+}
+
+.follow_us li a{
+    color:  rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+}
+
+.download{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 25rem;
+}
+
+.download p{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+    width: 80%;
+}
+
+.download .download_img{
+    display: flex;
+    color: #FFF;
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+}
+
+.download .download_img img{
+    width: 50%;
+}
+/* end footer */

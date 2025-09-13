@@ -1,0 +1,752 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-color: #111114;
+  color: #fffeff;
+}
+
+/* common */
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* start nav */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  margin-top: 2rem;
+  max-width: 1440px;
+}
+
+.nav .nav_list {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.nav .nav_list li {
+  list-style: none;
+}
+
+.nav .nav_list li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  font-size: 1.6rem;
+}
+
+.nav .nav_list li:nth-child(1) a {
+  color: var(--Dark-Orange, #fb8f2c);
+}
+
+.nav .nav_logo img {
+  height: 100%;
+  align-items: center;
+}
+
+.nav .nav_function {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.nav .nav_function a {
+  color: #fff;
+}
+
+/* end nav */
+
+/* start header */
+header {
+  margin-top: 8rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+header .content {
+  width: 60%;
+}
+
+header .content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+header .content .last_child {
+  margin: 3rem 0 1.5rem 0;
+}
+
+header .content > a {
+  color: #fb8f2c;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+header .content h1 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 7.4rem;
+  text-transform: capitalize;
+}
+
+header .img {
+  width: 35%;
+  position: relative;
+}
+
+.sub_img img:nth-child(1) {
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.sub_img img:nth-child(2) {
+  position: absolute;
+  top: 45%;
+  right: -10%;
+}
+
+.sub_img img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.sub_img p {
+  color: #fff;
+  text-align: right;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem; /* 141.667% */
+  text-transform: capitalize;
+  position: absolute;
+  left: -10%;
+  bottom: 20%;
+  background-color: #fb8f2c;
+  padding: 10px 28px;
+}
+/* end header */
+
+/* start main */
+/* start banner */
+.banner {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 8rem;
+  background-image: url(../IMG/HomePage/bg.png);
+  padding: 5rem 10rem;
+}
+
+.banner .data {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 20%;
+}
+
+.banner .data p:first-child {
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 7.4rem; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.banner .data p:last-child {
+  color: #fff;
+  text-align: center;
+
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+}
+/* end banner */
+
+/* start Most popular food */
+.recomment_food {
+  margin-top: 10rem;
+}
+
+.recomment_food h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 7.4rem; /* 115.625% */
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+
+.recomment_food > p {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+  width: 50%;
+}
+
+.order {
+  display: flex;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.order .item {
+  width: 33%;
+}
+
+.order .item img {
+  cursor: pointer;
+}
+
+.order .item .price {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.order .item .price h2 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.order .item .price p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+
+.order .item p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.order .item .button_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order .item .button_price a {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  border-bottom: 1px #fb8f2c solid;
+  text-decoration: none;
+}
+
+.order .item .button_price .star {
+  display: flex;
+  color: #fb8f2c;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.not-star {
+  color: #828282;
+}
+
+.explore {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #fb8f2c;
+  padding-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.explore p {
+  color: var(--Dark-Orange, #fb8f2c);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.explore img {
+  width: 20%;
+  height: auto;
+}
+/* end Most popular food */
+
+/* start calendar */
+.calendar {
+  display: flex;
+  margin-top: 15rem;
+  align-items: center;
+  height: 264px;
+}
+
+.calendar .address {
+  background-image: url(../IMG/HomePage/bg1.png);
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.calendar .address h3 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.calendar .address p {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.calendar .calendar_detail {
+  background-color: #fb8f2c;
+  width: 50%;
+  text-align: center;
+  padding: 5rem 0;
+  height: 100%;
+}
+
+.calendar .calendar_detail h3 {
+  color: #111114;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+}
+
+.calendar .calendar_detail .time {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.calendar .calendar_detail .time p {
+  color: #111114;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+/* end calendar */
+
+/* start choose food */
+.choose_food {
+  margin-top: 15rem;
+}
+
+.choose_food > p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin-left: 35rem;
+  margin-right: 35rem;
+  margin-top: 2rem;
+}
+
+.choose_food h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.4rem;
+  text-transform: capitalize;
+}
+
+.choose_food .selection ul {
+  display: flex;
+  gap: 6rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.choose_food .selection ul li {
+  list-style: none;
+}
+
+.choose_food .selection ul a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.choose_food .selection ul li:first-child a {
+  color: #fb8f2c;
+}
+
+.choose_food .line {
+  height: 1px;
+  width: 100%;
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 3rem;
+}
+
+.choose_food .list {
+  display: flex;
+  gap: 5rem;
+}
+
+.choose_food .list .col {
+  width: 50%;
+}
+
+.itemm {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.col .itemm:first-child {
+  margin-top: 3rem;
+}
+
+.col .itemm .meal {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  width: 60%;
+}
+
+.col .itemm img{
+  width: 100%;
+}
+
+.col .itemm > p {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.col .itemm .meal p {
+  color: #fff;
+  text-align: left;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+}
+/* end choose food */
+
+/* start visit */
+.visit {
+  margin-top: 8rem;
+}
+
+.visit h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 7.4rem;
+  text-transform: capitalize;
+}
+
+.visit > p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 1rem 45rem;
+}
+
+.visit .img {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.visit .img .img_col_left,
+.visit .img .img_col_center,
+.visit .img .img_col_right {
+  width: 32%;
+}
+
+.visit .img .img_col_left img,
+.visit .img .img_col_center img,
+.visit .img .img_col_right img {
+  width: 100%;
+}
+
+.visit .img .img_col_left img:first-child,
+.visit .img .img_col_right img:first-child {
+  margin-bottom: 3rem;
+}
+/* end visit */
+
+/* start reserve */
+.reserve {
+  display: flex;
+  margin-top: 15rem;
+  position: relative;
+}
+
+.reserve .reserve_booking {
+  width: 50%;
+  background-color: #fb8f2c;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+.reserve .reserve_booking h2 {
+  color: #111114;
+  font-family: "Libre Bodoni";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  text-transform: capitalize;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.reserve_content {
+  display: flex;
+  gap: 10rem;
+}
+
+.reserve_content .reserve_content_detail > p {
+  color: #111114;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+}
+
+.reserve_content .reserve_content_detail .time {
+  display: flex;
+  gap: 1rem;
+}
+
+.reserve_content .reserve_content_detail .time > p {
+  color: var(--Dark, #111114);
+  font-family: "Libre Bodoni";
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5rem;
+}
+
+.time .month1 {
+  padding-top: 0.5rem;
+}
+
+.time .month2 {
+  padding-top: 1.4rem;
+}
+
+.time .month p {
+  color: #111114;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  cursor: pointer;
+}
+
+.time .month i {
+  color: #111114;
+  cursor: pointer;
+}
+
+.reserve_booking .btn {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  background-color: #111114;
+  margin-top: 7.4rem;
+  padding: 1.5rem 11.5rem;
+  cursor: pointer;
+}
+
+.reserve > .img {
+  width: 50%;
+  background-image: url(../IMG/HomePage/reserve.png);
+}
+
+.reserve .logo{
+  position: absolute;
+  top: -15%;
+  right: -5%;
+}
+/* end reserve */
+
+/* end main */
+
+/* start footer */
+footer {
+  display: flex;
+  margin-top: 10rem;
+  gap: 3rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer_logo {
+  display: flex;
+  gap: 2rem;
+  width: 20%;
+}
+
+.footer_logo h3 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.footer_logo img {
+  width: 30%;
+  height: 30%;
+}
+
+.usefull_link,
+.follow_us {
+  width: 15%;
+}
+
+.contact_info {
+  width: 20%;
+}
+
+.usefull_link h3,
+.contact_info h3,
+.follow_us h3,
+.legal h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.6rem; /* 130% */
+}
+
+footer ul {
+  margin-top: 3rem;
+}
+
+.usefull_link li,
+.contact_info li,
+.follow_us li,
+.legal li {
+  list-style: none;
+}
+
+.usefull_link li a,
+.contact_info li a,
+.legal li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+}
+
+.contact_info li:nth-child(2) a {
+  color: #fb8f2c;
+}
+
+.follow_us li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 25rem;
+}
+
+.download p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+  width: 80%;
+}
+
+.download .download_img {
+  display: flex;
+  color: #fff;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.download .download_img img {
+  width: 50%;
+}
+/* end footer */
