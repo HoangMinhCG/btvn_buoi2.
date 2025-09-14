@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AboutUs</title>
     <link rel="stylesheet" href="./CSS/AboutUs.css" />
+    <link rel="stylesheet" href="./CSS/responsive/R_AboutUs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -17,12 +18,33 @@
     <!-- start nav -->
     <nav class="container">
       <div class="nav">
+        <!-- btn nav mobile -->
+        <div class="btn_mobile">
+          <button>
+            <label for="toggle-menu"
+              ><img class="nav_btn" src="./IMG/About us/nav_btn.png" alt=""
+            /></label>
+          </button>
+          <input type="checkbox" id="toggle-menu" hidden/>
+          <nav class="menu">
+            <ul class="nav_list_sub">
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">Menu</a></li>
+              <li><a href="#!">Blog</a></li>
+              <li><a href="#!">Pages</a></li>
+              <li><a href="#!">Contact</a></li>
+            </ul>
+          </nav>
+          <label for="toggle-menu" class="overplay"></label>
+        </div>
+
+        <!-- nav pc -->
         <ul class="nav_list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#!">Home</a></li>
+          <li><a href="#!">Menu</a></li>
+          <li><a href="#!">Blog</a></li>
+          <li><a href="#!">Pages</a></li>
+          <li><a href="#!">Contact</a></li>
         </ul>
 
         <div class="nav_logo">
@@ -32,7 +54,7 @@
 
         <div class="nav_function">
           <p>11:24 we’re open</p>
-          <a href="#">Table Reservation</a>
+          <a href="#!">Table Reservation</a>
         </div>
       </div>
     </nav>
@@ -62,13 +84,15 @@
 
         <div class="col_right">
           <img src="./IMG/About us/story3.png" alt="" />
-          <h2>The story of our first restaurant branch</h2>
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident.
-          </p>
+          <div class="story_detail">
+            <h2>The story of our first restaurant branch</h2>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident.
+            </p>
+          </div>
         </div>
       </div>
       <!-- end story -->
@@ -157,46 +181,46 @@
       <div class="usefull_link">
         <h3>Usefull Link</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Booking</a></li>
-          <li><a href="#">Menu</a></li>
+          <li><a href="#!">Home</a></li>
+          <li><a href="#!">About Us</a></li>
+          <li><a href="#!">Services</a></li>
+          <li><a href="#!">Booking</a></li>
+          <li><a href="#!">Menu</a></li>
         </ul>
       </div>
 
       <div class="contact_info">
         <h3>Contact Info</h3>
         <ul>
-          <li><a href="#">Silk St, Barbican, London EC2Y 8DS, UK</a></li>
-          <li><a href="#">info@example.com</a></li>
-          <li><a href="#">800-123-45-678</a></li>
+          <li><a href="#!">Silk St, Barbican, London EC2Y 8DS, UK</a></li>
+          <li><a href="#!">info@example.com</a></li>
+          <li><a href="#!">800-123-45-678</a></li>
         </ul>
       </div>
 
       <div class="follow_us">
         <h3>Follow us</h3>
         <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">Twitter</a></li>
+          <li><a href="#!">Facebook</a></li>
+          <li><a href="#!">Instagram</a></li>
+          <li><a href="#!">Linkedin</a></li>
+          <li><a href="#!">Twitter</a></li>
         </ul>
       </div>
 
       <div class="legal">
         <h3>Legal</h3>
         <ul>
-          <li><a href="#">Website by uihut.com</a></li>
-          <li><a href="#">©2022. All Rights Reserved</a></li>
+          <li><a href="#!">Website by uihut.com</a></li>
+          <li><a href="#!">©2022. All Rights Reserved</a></li>
         </ul>
       </div>
 
       <div class="download">
         <p>Download the WowWraps app today.</p>
         <div class="download_img">
-          <img src="./IMG/About us/ios.jpg" alt="">
-          <img src="./IMG/About us/android.jpg" alt="">
+          <img src="./IMG/About us/ios.jpg" alt="" />
+          <img src="./IMG/About us/android.jpg" alt="" />
         </div>
       </div>
     </footer>

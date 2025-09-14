@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
     <link rel="stylesheet" href="./CSS/HomePage.css" />
+    <link rel="stylesheet" href="./CSS/responsive/R_HomePage.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -17,6 +18,27 @@
     <!-- start nav -->
     <nav class="container">
       <div class="nav">
+        <!-- btn nav mobile -->
+        <div class="btn_mobile">
+          <button>
+            <label for="toggle-menu"
+              ><img class="nav_btn" src="./IMG/About us/nav_btn.png" alt=""
+            /></label>
+          </button>
+          <input type="checkbox" id="toggle-menu" hidden/>
+          <nav class="menu">
+            <ul class="nav_list_sub">
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">Menu</a></li>
+              <li><a href="#!">Blog</a></li>
+              <li><a href="#!">Pages</a></li>
+              <li><a href="#!">Contact</a></li>
+            </ul>
+          </nav>
+          <label for="toggle-menu" class="overplay"></label>
+        </div>
+
+        <!-- nav pc -->
         <ul class="nav_list">
           <li><a href="#">Home</a></li>
           <li><a href="#">Menu</a></li>
@@ -62,9 +84,9 @@
     <!-- end header -->
 
     <!-- start main -->
-    <main class="container">
+    <main>
       <!-- start banner -->
-      <div class="banner">
+      <div class="banner container">
         <div class="data">
           <p>06</p>
           <p>Number Restaurant</p>
@@ -333,6 +355,171 @@
         <img class="logo" src="./IMG/HomePage/reserve1.png" alt="">
       </div>
       <!-- end reserve -->
+
+      <!-- Start Daily Offers -->
+      <div class="daily_offers container">
+        <h2>Our Daily Offers</h2>
+        <div class="offers">
+          <div class="offers_img">
+            <div class="offers_img_discount">
+              <h3>Lunch Time</h3>
+              <div class="discount">
+                <p>30%</p>
+                <p>off</p>
+              </div>
+              <p>We love food, lots of different and food, just like you.</p>
+              <button>Order Now</button>
+            </div>
+          </div>
+
+          <div class="offers_content">
+            <div class="offer_item">
+              <div class="offer">
+                <img src="./IMG/HomePage/offer2.png" alt="">
+                <div class="offer_detail">
+                  <h3>Spicy Club</h3>
+                  <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
+                </div>
+              </div>
+              <p>$42</p>
+            </div>
+            <div class="offer_item">
+              <div class="offer">
+                <img src="./IMG/HomePage/offer3.png" alt="">
+                <div class="offer_detail">
+                  <h3>Almond baked Brie</h3>
+                  <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
+                </div>
+              </div>
+              <p>$38</p>
+            </div>
+            <div class="offer_item">
+              <div class="offer">
+                <img src="./IMG/HomePage/offer4.png" alt="">
+                <div class="offer_detail">
+                  <h3>Tuscan Flatbread</h3>
+                  <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
+                </div>
+              </div>
+              <p>$49</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Daily Offers -->
+
+      <!-- start slogun -->
+      <div class="sloguns">
+        <div class="slogun">
+          <img src="./IMG/HomePage/slogun1.png" alt="">
+          <div class="slogun_sub">
+            <img src="./IMG/HomePage/slogun_sub1.png" alt="">
+          </div>
+          <p>Self Services</p>
+        </div>
+        <div class="slogun">
+          <img src="./IMG/HomePage/slogun2.png" alt="">
+          <div class="slogun_sub">
+            <img src="./IMG/HomePage/slogun_sub2.png" alt="">
+          </div>
+          <p>Best Food</p>
+        </div>
+        <div class="slogun">
+          <img src="./IMG/HomePage/slogun3.png" alt="">
+          <div class="slogun_sub">
+            <img src="./IMG/HomePage/slogun_sub3.png" alt="">
+          </div>
+          <p>Fast Delivery</p>
+        </div>
+        <div class="slogun">
+          <img src="./IMG/HomePage/slogun4.png" alt="">
+          <div class="slogun_sub">
+            <img src="./IMG/HomePage/slogun_sub4.png" alt="">
+          </div>
+          <p>Super Taste</p>
+        </div>
+      </div>
+      <!-- end slogun -->
+
+      <!-- start chef list -->
+      <div class="chef container">
+        <h2>They will cook for you</h2>
+        <p>Our Diners can enjoy cooking for themselves, or visiting a curated selection of restaurants in the area. They will cook for you and make sure you have a home away from home at all times.</p>
+        <div class="chef_lists">
+          <div class="chef_info">
+            <img src="./IMG/HomePage/chef1.png" alt="chef1">
+            <h3>Jubed Ahmed</h3>
+            <p>Chef</p>
+          </div>
+          <div class="chef_info">
+            <img src="./IMG/HomePage/chef2.png" alt="chef2">
+            <h3>Delwar hussen</h3>
+            <p>Assisten chef</p>
+          </div>
+          <div class="chef_info">
+            <img src="./IMG/HomePage/chef3.png" alt="chef3">
+            <h3>Tajul Islam</h3>
+            <p>Chef</p>
+          </div>
+        </div>
+        <img class="star" src="./IMG/HomePage/star.png" alt="">
+      </div>
+      <!-- end chef list -->
+
+      <!-- start articles -->
+       <div class="articles container">
+        <p>Our blog</p>
+        <h2>Recent Articles</h2>
+        <div class="article_content">
+          <img src="./IMG/HomePage/article1.png" alt="article1">
+          <div class="article_detail">
+            <p>August 6, 2022 </p>
+            <h3>The Most Expensive Cup of Coffee in the Usa</h3>
+            <p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauatium, totam rem aperiam perspiciatis unde omnis.</p>
+            <div class="statistical">
+              <p>Comments 165</p>
+              <p>View 1265</p>
+            </div>
+          <p class="read">Read Now</p>
+          </div>          
+        </div>
+
+        <div class="article_content margin">
+          <div class="article_detail">
+            <p>August 6, 2022 </p>
+            <h3>Chicken Soup With Spring Veggies Aand Pasta</h3>
+            <p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauatium, totam rem aperiam perspiciatis unde omnis.</p>
+            <div class="statistical">
+            <p>Comments 165</p>
+            <p>View 1265</p>
+          </div>
+          <p class="read">Read Now</p>
+          </div>          
+          <img src="./IMG/HomePage/article2.png" alt="article2">
+        </div>
+        <div class="explore">
+          <p>Explore All Food</p>
+          <img src="./IMG/HomePage/row.png" alt="">
+        </div>
+       </div>
+      <!-- end articles -->
+
+      <!-- start newsletter -->
+      <div class="newsletter container">
+          <div class="newsletter_content">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter and receive 15% discount from your order.</p>
+          </div>
+
+          <div class="add_email">
+            <div class="add_email_detail">
+              <p>Enter your email address</p>
+              <img src="./IMG/HomePage/row1.png" alt="row">
+            </div>
+          <div class="add_email_line"></div>
+          </div>
+      </div>
+      <!-- end newsletter -->
     </main>
     <!-- end main -->
 

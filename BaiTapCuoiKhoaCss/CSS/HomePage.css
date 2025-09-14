@@ -17,6 +17,10 @@ html {
   margin-right: auto;
 }
 
+.btn_mobile {
+  display: none;
+}
+
 /* start nav */
 
 .nav {
@@ -52,6 +56,7 @@ html {
 .nav .nav_logo img {
   height: 100%;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav .nav_function {
@@ -63,6 +68,19 @@ html {
 
 .nav .nav_function a {
   color: #fff;
+}
+
+.nav .nav_list li:hover a,
+.nav .nav_function a:hover,
+.usefull_link li:hover a,
+.contact_info li:hover a,
+.follow_us li:hover a,
+.legal li:hover a {
+  color: #fb8f2c;
+}
+
+.download_img {
+  cursor: pointer;
 }
 
 /* end nav */
@@ -97,6 +115,10 @@ header .content > a {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
+}
+
+header .content > a:hover {
+  color: #fff;
 }
 
 header .content h1 {
@@ -280,6 +302,10 @@ header .img {
   text-decoration: none;
 }
 
+.order .item .button_price a:hover {
+  color: #fb8f2c;
+}
+
 .order .item .button_price .star {
   display: flex;
   color: #fb8f2c;
@@ -314,6 +340,11 @@ header .img {
 .explore img {
   width: 20%;
   height: auto;
+}
+
+.explore p:hover,
+.explore img:hover {
+  opacity: 0.5;
 }
 /* end Most popular food */
 
@@ -350,6 +381,11 @@ header .img {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
+}
+
+.calendar .address p:hover {
+  cursor: pointer;
+  color: #fb8f2c;
 }
 
 .calendar .calendar_detail {
@@ -434,6 +470,10 @@ header .img {
   line-height: 40px;
 }
 
+.choose_food .selection ul a:hover {
+  color: #fb8f2c;
+}
+
 .choose_food .selection ul li:first-child a {
   color: #fb8f2c;
 }
@@ -455,7 +495,7 @@ header .img {
   width: 50%;
 }
 
-.itemm {  
+.itemm {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -473,7 +513,7 @@ header .img {
   width: 60%;
 }
 
-.col .itemm img{
+.col .itemm img {
   width: 100%;
 }
 
@@ -615,6 +655,10 @@ header .img {
   cursor: pointer;
 }
 
+.time .month i:hover {
+  color: #fff;
+}
+
 .reserve_booking .btn {
   color: #fff;
   text-align: center;
@@ -626,6 +670,12 @@ header .img {
   margin-top: 7.4rem;
   padding: 1.5rem 11.5rem;
   cursor: pointer;
+  border: none;
+}
+
+.reserve_booking .btn:hover {
+  background-color: #828282;
+  color: #fb8f2c;
 }
 
 .reserve > .img {
@@ -633,12 +683,414 @@ header .img {
   background-image: url(../IMG/HomePage/reserve.png);
 }
 
-.reserve .logo{
+.reserve .logo {
   position: absolute;
   top: -15%;
   right: -5%;
 }
 /* end reserve */
+
+/* Start Daily Offers */
+.daily_offers {
+  margin-top: 15rem;
+}
+
+.daily_offers h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 7.4rem;
+}
+
+.daily_offers .offers {
+  display: flex;
+  gap: 3rem;
+  margin-top: 5.2rem;
+}
+
+.daily_offers .offers .offers_img {
+  width: 50%;
+  background-image: url(../IMG/HomePage/offer1.png);
+  background-size: cover;
+  padding: 2.3rem 3rem;
+}
+
+.offers_img .offers_img_discount {
+  border: 1px solid #fbf8fc;
+  padding-top: 7.2rem;
+  padding-left: 4.1rem;
+  padding-bottom: 4rem;
+}
+
+.offers_img .offers_img_discount h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+}
+
+.offers_img_discount .discount {
+  display: flex;
+  gap: 1rem;
+}
+
+.offers_img_discount .discount p:first-child {
+  color: #fb8f2c;
+  font-family: Playball;
+  font-size: 8.4rem;
+  font-weight: 400;
+  line-height: 8.2rem;
+  letter-spacing: -5.04px;
+}
+
+.offers_img_discount .discount p:last-child {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  padding-top: 4rem;
+}
+
+.offers_img_discount > p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin-top: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.offers_img_discount button {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  background-color: rgba(251, 143, 44, 0.8);
+  padding: 0.8rem 3rem;
+}
+
+.offers .offers_content {
+  width: 50%;
+}
+
+.offers .offers_content .offer_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer_item:nth-child(2) {
+  margin: 3.6rem 0;
+}
+
+.offer_item .offer {
+  display: flex;
+  gap: 2.8rem;
+  width: 70%;
+}
+
+.offer_item .offer .offer_detail h3 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  margin-bottom: 1.6rem;
+  margin-top: 1.1rem;
+}
+
+.offer_item .offer .offer_detail p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.offer_item > p {
+  color: #fff;
+  text-align: right;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+/* end Daily Offers */
+
+/* start slogun */
+.sloguns {
+  margin-top: 15rem;
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+  background-color: #fb8f2c;
+  padding: 5.1rem 0;
+  width: 100%;
+}
+
+.sloguns .slogun {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.sloguns .slogun p {
+  color: #111114;
+  font-family: Butler;
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 4.2rem;
+}
+
+.slogun > img {
+  position: relative;
+}
+
+.slogun .slogun_sub {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  margin-left: 1.5rem;
+}
+/* end slogun */
+
+/* start chef list */
+.chef {
+  margin-top: 15rem;
+  position: relative;
+}
+
+.chef h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 7.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.chef > p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin-bottom: 4rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chef .chef_lists {
+  display: flex;
+  gap: 3rem;
+}
+
+.chef .chef_lists .chef_info {
+  width: 33%;
+}
+
+.chef .chef_lists .chef_info img {
+  width: 100%;
+}
+
+.chef .chef_lists .chef_info:nth-child(2) img {
+  height: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.chef_info h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 4rem;
+  margin-top: 3rem;
+}
+
+.chef_info p {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+
+.chef .star {
+  position: absolute;
+  left: -4%;
+  top: 13%;
+}
+/* end chef list */
+
+/* start articles */
+.articles {
+  margin-top: 15rem;
+}
+
+.articles > p:nth-child(1) {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.articles > h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 7.4rem;
+  margin-bottom: 6rem;
+}
+
+.articles .article_content {
+  display: flex;
+  gap: 3rem;
+}
+
+.margin {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.articles .article_content img {
+  width: 50%;
+}
+
+.articles .article_content .article_detail {
+  width: 50%;
+}
+
+.articles .article_content .article_detail p:nth-child(1) {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.articles .article_content .article_detail h3 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.articles .article_content .article_detail .p2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  margin-top: 2rem;
+  padding-right: 5rem;
+}
+
+.statistical {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 3rem;
+}
+
+.statistical p {
+  color: #fff;
+  text-align: right;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+}
+
+.article_content .read {
+  display: inline;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.6rem;
+  border-bottom: #fb8f2c 1px solid;
+  padding-bottom: 1rem;
+}
+
+.article_content .read:hover {
+  cursor: pointer;
+  color: #fb8f2c;
+}
+/* end articles */
+
+/* start newsletter */
+.newsletter {
+  margin-top: 15.6rem;
+  background-image: url(../IMG/HomePage/bg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem 13.5rem;
+  align-items: center;
+}
+
+.newsletter .newsletter_content {
+  width: 30%;
+}
+
+.newsletter .newsletter_content h3 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+.newsletter .newsletter_content p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.newsletter .add_email {
+  width: 30%;
+  border-bottom: solid #fff 1px;
+  padding-bottom: 2.8rem;
+}
+
+.newsletter .add_email .add_email_detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsletter .add_email .add_email_detail p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+.newsletter .add_email .add_email_detail p:hover,
+.newsletter .add_email .add_email_detail img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* end newsletter */
 
 /* end main */
 
@@ -689,7 +1141,7 @@ footer {
 }
 
 footer ul {
-  margin-top: 3rem;
+  margin-top: 2.4rem;
 }
 
 .usefull_link li,
@@ -697,6 +1149,7 @@ footer ul {
 .follow_us li,
 .legal li {
   list-style: none;
+  margin-bottom: 1.6rem;
 }
 
 .usefull_link li a,

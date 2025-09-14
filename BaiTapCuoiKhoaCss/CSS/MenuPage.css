@@ -1,13 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 10px;
-    background-color: #111114;
-    color: #fffeff;
+html {
+  font-size: 10px;
+  background-color: #111114;
+  color: #fffeff;
 }
 
 /* common */
@@ -17,55 +17,71 @@ html{
   margin-right: auto;
 }
 
+.btn_mobile {
+  display: none;
+}
 
 /* start nav */
 
-.nav{
-    display: flex;    
-    justify-content: space-between;
-    height: 4rem;
-    margin-top: 2rem;
-    max-width: 1440px;    
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  margin-top: 2rem;
+  max-width: 1440px;
 }
 
-.nav .nav_list{
-    display: flex;
-    gap: 3.5rem;
-    align-items: center;
+.nav .nav_list {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
 }
 
-.nav .nav_list li{
-    list-style: none;
+.nav .nav_list li {
+  list-style: none;
 }
 
-.nav .nav_list li a{
-    color: rgba(255, 255, 255, 0.80);
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px; /* 162.5% */
-    font-size: 1.6rem;
+.nav .nav_list li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  font-size: 1.6rem;
 }
 
-.nav .nav_list li:nth-child(2) a{
-    color: var(--Dark-Orange, #FB8F2C);
+.nav .nav_list li:nth-child(2) a {
+  color: var(--Dark-Orange, #fb8f2c);
 }
 
-.nav .nav_logo img{
-    height: 100%;
-    align-items: center;
+.nav .nav_logo img {
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
 }
 
-.nav .nav_function{
-    display: flex;
-    gap: 3.5rem;
-    align-items: center;
-    font-size: 1.6rem;
-
+.nav .nav_function {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  font-size: 1.6rem;
 }
 
-.nav .nav_function a{
-    color: #fff;    
+.nav .nav_function a {
+  color: #fff;
+}
+
+.nav .nav_list li:hover a,
+.nav .nav_function a:hover,
+.usefull_link li:hover a,
+.contact_info li:hover a,
+.follow_us li:hover a,
+.legal li:hover a {
+  color: #fb8f2c;
+}
+
+.download_img {
+  cursor: pointer;
 }
 
 /* end nav */
@@ -73,159 +89,168 @@ html{
 /* start main */
 
 /* start menu */
-.menu{
-    margin-top: 10rem;
+.menu {
+  margin-top: 10rem;
 }
 
-.menu h1{
-    color: #FFF;
-    text-align: center;
-    font-family: "Libre Bodoni";
-    font-size: 6.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 7.4rem; /* 115.625% */
-    text-transform: capitalize;
-    margin: 0 auto;    
+.menu h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.4rem; /* 115.625% */
+  text-transform: capitalize;
+  margin: 0 auto;
 }
 
-.menu img{
-    margin: 0 auto;    
-    display: block;
+.menu img {
+  margin: 0 auto;
+  display: block;
 }
 
-.order{
-    display: flex;
-    gap: 5rem;
-    position: relative;
-    margin-top: 10rem;
+.order {
+  display: flex;
+  gap: 5rem;
+  position: relative;
+  margin-top: 10rem;
 }
 
-.order .item{
-    width: 30%;
+.order .item {
+  width: 30%;
 }
 
-.order .item img{
-    cursor: pointer;
+.order .item img {
+  cursor: pointer;
 }
 
-.order .item h2{
-    margin: 2rem 0;
-    color:  #FFF;
-    font-family: "Libre Bodoni";
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 3.4rem; /* 141.667% */
-    text-transform: capitalize;
-    cursor: pointer;
+.order .item h2 {
+  margin: 2rem 0;
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.4rem; /* 141.667% */
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
-.order .item p{
-    color: rgba(255, 255, 255, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.6rem; /* 162.5% */
+.order .item p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
 }
 
-.order .item .line{
-    display: block;
-    opacity: 0.2;
-    background: rgba(255, 255, 255, 0.80);
-    height: 1px;
-    width: 100%;
-    margin: 2rem 0;
+.order .item .line {
+  display: block;
+  opacity: 0.2;
+  background: rgba(255, 255, 255, 0.8);
+  height: 1px;
+  width: 100%;
+  margin: 2rem 0;
 }
 
-.order .item .button_price{
-    display: flex;
-    justify-content: space-between;
+.order .item .button_price {
+  display: flex;
+  justify-content: space-between;
 }
 
-.order .item .button_price a{
-    color: #FFF;
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.6rem;
+.order .item .button_price a {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
 }
 
-.order .item .button_price p{
-    color: #FFF;
-    font-family: "Libre Bodoni";
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 3.4rem; 
-    text-transform: capitalize;
+.order .item .button_price a:hover {
+  color: #fb8f2c;
 }
 
-.order .row{
-    position: absolute;
-    right: -6%;
-    top: 25%;
-    cursor: pointer;
+.order .item .button_price p {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+}
+
+.order .row {
+  position: absolute;
+  right: -6%;
+  top: 25%;
+  cursor: pointer;
 }
 
 /* start poster */
-.poster{
-    background: url('../IMG/MenuPage/bg_poster.png');
-    background-size: contain;
-    width: 100%;
-    margin-top: 8rem;
-    padding: 5rem 0;
+.poster {
+  background: url("../IMG/MenuPage/bg_poster.png");
+  background-size: contain;
+  width: 100%;
+  margin-top: 8rem;
+  padding: 5rem 0;
 }
 
-.poster .box{
-    width: 50%;
-    margin: 0 auto;
-    background: rgba(17, 17, 20, 0.50);
-    backdrop-filter: blur(2px);
-    align-items: center;
-    padding: 2rem 6rem;
+.poster .box {
+  width: 50%;
+  margin: 0 auto;
+  background: rgba(17, 17, 20, 0.5);
+  backdrop-filter: blur(2px);
+  align-items: center;
+  padding: 2rem 6rem;
 }
 
-.poster .box h2{        
-    color: #FFF;
-    text-align: center;
-    font-family: "Libre Bodoni";
-    font-size: 6.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 7.4rem; 
-    text-transform: capitalize;
-    margin-top: 2rem;
+.poster .box h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Bodoni";
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.4rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
 }
 
-.poster .box p{
-    color: #FFF;
-    text-align: center;
-    font-family: "Plus Jakarta Sans";
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 3.8rem; 
+.poster .box p {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.8rem;
 }
 
-.poster .box button{
-    display: block;
-    padding: 8px 30px;
-    background: rgba(251, 143, 44, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px; /* 162.5% */
-    margin: 2rem auto;
-    cursor: pointer;    
+.poster .box button {
+  display: block;
+  padding: 8px 30px;
+  background: rgba(251, 143, 44, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  margin: 2rem auto;
+  cursor: pointer;
+  border: none;
 }
 
-.poster .box button a{
-    color: #FFF;
-    text-decoration: none;
+.poster .box button:hover {
+  background-color: #f8a960;
+}
+
+.poster .box button a {
+  color: #fff;
+  text-decoration: none;
 }
 /* end poster */
 /* end menu */
@@ -233,114 +258,115 @@ html{
 /* end main */
 
 /* start footer */
-footer{
-    display: flex;
-    margin-top: 10rem;
-    gap: 3rem;
-    justify-content: space-between;
-    position: relative;
+footer {
+  display: flex;
+  margin-top: 10rem;
+  gap: 3rem;
+  justify-content: space-between;
+  position: relative;
 }
 
-.footer_logo{
-    display: flex;
-    gap: 2rem;
-    width: 20%;
+.footer_logo {
+  display: flex;
+  gap: 2rem;
+  width: 20%;
 }
 
-.footer_logo h3{
-    font-size: 2.5rem;
-    margin-top: 1.5rem;
-    display: block;
+.footer_logo h3 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  display: block;
 }
 
-.footer_logo img{
-    width: 30%;
-    height: 30%;
+.footer_logo img {
+  width: 30%;
+  height: 30%;
 }
 
 .usefull_link,
-.follow_us{
-    width: 15%;
+.follow_us {
+  width: 15%;
 }
 
-.contact_info{
-    width: 20%;
+.contact_info {
+  width: 20%;
 }
 
 .usefull_link h3,
 .contact_info h3,
 .follow_us h3,
-.legal h3{
-    color: #FFF;
-    font-family: "Plus Jakarta Sans";
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2.6rem; /* 130% */
+.legal h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem; /* 130% */
 }
 
-footer ul{
-    margin-top: 3rem;
+footer ul {
+  margin-top: 2.4rem;
 }
 
 .usefull_link li,
 .contact_info li,
 .follow_us li,
-.legal li{
-    list-style: none;
+.legal li {
+  list-style: none;
+  margin-bottom: 1.6rem;
 }
 
 .usefull_link li a,
 .contact_info li a,
-.legal li a{
-    text-decoration: none;
-    color:  rgba(255, 255, 255, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.6rem; /* 162.5% */
+.legal li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
 }
 
-.contact_info li:nth-child(2) a{
-    color: #FB8F2C;
+.contact_info li:nth-child(2) a {
+  color: #fb8f2c;
 }
 
-.follow_us li a{
-    color:  rgba(255, 255, 255, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.6rem; /* 162.5% */
+.follow_us li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
 }
 
-.download{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    max-width: 25rem;
+.download {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 25rem;
 }
 
-.download p{
-    color: rgba(255, 255, 255, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.6rem; /* 162.5% */
-    width: 80%;
+.download p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 162.5% */
+  width: 80%;
 }
 
-.download .download_img{
-    display: flex;
-    color: #FFF;
-    background-color: #FFF;
-    width: 100%;
-    height: auto;
+.download .download_img {
+  display: flex;
+  color: #fff;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
 }
 
-.download .download_img img{
-    width: 50%;
+.download .download_img img {
+  width: 50%;
 }
 /* end footer */

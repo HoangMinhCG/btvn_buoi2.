@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CartPage</title>
+    <link rel="stylesheet" href="./CSS/CartPage.css" />
+    <link rel="stylesheet" href="./CSS/responsive/R_CartPage.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- start nav -->
+    <nav class="container">
+      <div class="nav">
+        <!-- btn nav mobile -->
+        <div class="btn_mobile">
+          <button>
+            <label for="toggle-menu"
+              ><img class="nav_btn" src="./IMG/About us/nav_btn.png" alt=""
+            /></label>
+          </button>
+          <input type="checkbox" id="toggle-menu" hidden/>
+          <nav class="menu">
+            <ul class="nav_list_sub">
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">Menu</a></li>
+              <li><a href="#!">Blog</a></li>
+              <li><a href="#!">Pages</a></li>
+              <li><a href="#!">Contact</a></li>
+            </ul>
+          </nav>
+          <label for="toggle-menu" class="overplay"></label>
+        </div>
+
+        <!-- nav pc -->
+        <ul class="nav_list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav_logo">
+          <img src="./IMG/About us/nav_logo.png" alt="" />
+          <!-- <p>Xin chào<object data="" type=""></object></p> -->
+        </div>
+
+        <div class="nav_function">
+          <p>11:24 we’re open</p>
+          <a href="#">Table Reservation</a>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start main -->
+    <main class="container">
+      <!-- start cart table -->
+      <div class="cart_table">
+        <table width="100%" cellspacing="0">
+          <tr>
+            <th colspan="2"></th>
+            <th>Food</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+
+          <tr>
+            <td><img class="delete" src="./IMG/CartPage/delete" alt="" /></td>
+            <td><img src="./IMG/CartPage/item1.png" alt="" /></td>
+            <td>Crispy chicken breasts</td>
+            <td>$24.99</td>
+            <td>
+              <div class="btn">
+                <button class="minus">-</button>
+                <span>1</span>
+                <button class="plus">+</button>
+              </div>
+            </td>
+            <td>$24.99</td>
+          </tr>
+
+          <tr>
+            <td><img class="delete" src="./IMG/CartPage/delete" alt="" /></td>
+            <td><img src="./IMG/CartPage/item2.png" alt="" /></td>
+            <td>Crispy chicken breasts</td>
+            <td>$24.99</td>
+            <td>
+              <div class="btn">
+                <button class="minus">-</button>
+                <span>1</span>
+                <button class="plus">+</button>
+              </div>
+            </td>
+            <td>$24.99</td>
+          </tr>
+        </table>
+        <div class="table_btn">
+          <div class="update">
+            <button>Copon code</button>
+            <button>Apply coupon</button>
+          </div>
+          <button>Update Cart</button>
+        </div>
+      </div>
+      <!-- end cart table -->
+
+      <!-- start Cart totals -->
+      <div class="cart_totals">
+        <div class="none"></div>
+        <div class="cart_totals_table">
+          <h3>Cart totals</h3>
+          <div class="table">
+            <div class="subtotal">
+              <p>Subtotal</p>
+              <p>$83.99</p>
+            </div>
+
+            <div class="shipping">
+              <p>Shipping</p>
+              <div class="shipping_detail">
+                <p>Flat rate: <b>$6.00</b></p>
+                <p>Shipping to <b>New South Wales</b>.</p>
+                <div class="change_address">
+                  <p>Change address</p>
+                  <img src="./IMG/CartPage/change_address.png" alt="" />
+                </div>
+
+                <div class="australia">
+                  <select name="address" id="address">
+                    <option value="0">Australia</option>
+                    <option value="1">VietNam</option>
+                  </select>
+                </div>
+
+                <div class="new_south_wales">
+                  <select name="address" id="address">
+                    <option value="0">New South Wales</option>
+                    <option value="1">Ha Noi</option>
+                    <option value="2">TP HCM</option>
+                  </select>
+                </div>
+                <input type="text" placeholder="Suburb" />
+                <input type="text" placeholder="Postcode" />
+                <button><a href="#!">Update</a></button>
+              </div>
+            </div>
+
+            <div class="total">
+              <p>Total</p>
+              <p>$89.99</p>
+            </div>
+          </div>
+          <button class="checkout"><a href="#!">Proceed to Checkout</a></button>
+        </div>
+      </div>
+      <!-- end Cart totals -->
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="container">
+      <div class="footer_logo">
+        <img src="./IMG/About us/nav_logo.png" alt="" />
+        <h3>WowWraps</h3>
+      </div>
+
+      <div class="usefull_link">
+        <h3>Usefull Link</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </div>
+
+      <div class="contact_info">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><a href="#">Silk St, Barbican, London EC2Y 8DS, UK</a></li>
+          <li><a href="#">info@example.com</a></li>
+          <li><a href="#">800-123-45-678</a></li>
+        </ul>
+      </div>
+
+      <div class="follow_us">
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="legal">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Website by uihut.com</a></li>
+          <li><a href="#">©2022. All Rights Reserved</a></li>
+        </ul>
+      </div>
+
+      <div class="download">
+        <p>Download the WowWraps app today.</p>
+        <div class="download_img">
+          <img src="./IMG/About us/ios.jpg" alt="" />
+          <img src="./IMG/About us/android.jpg" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

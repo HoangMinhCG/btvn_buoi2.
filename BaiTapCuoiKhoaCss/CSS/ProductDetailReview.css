@@ -8,7 +8,6 @@ html {
   font-size: 10px;
   background-color: #111114;
   color: #fffeff;
-  
 }
 
 /* common */
@@ -16,6 +15,10 @@ html {
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn_mobile {
+  display: none;
 }
 
 /* start nav */
@@ -54,6 +57,7 @@ html {
 .nav .nav_logo img {
   height: 100%;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav .nav_function {
@@ -65,6 +69,19 @@ html {
 
 .nav .nav_function a {
   color: #fff;
+}
+
+.nav .nav_list li:hover a,
+.nav .nav_function a:hover,
+.usefull_link li:hover a,
+.contact_info li:hover a,
+.follow_us li:hover a,
+.legal li:hover a {
+  color: #fb8f2c;
+}
+
+.download_img {
+  cursor: pointer;
 }
 
 /* end nav */
@@ -157,9 +174,16 @@ html {
   height: 100%;
   background-color: #111114;
   color: #fff;
-  /* padding: 1.2rem 2rem; */
   border: none;
   cursor: pointer;
+}
+
+.add_product .btn button:hover {
+  background-color: #8c8c8d;
+}
+
+.add_product > button:hover {
+  background-color: #f7b272;
 }
 
 .add_product .btn span {
@@ -185,49 +209,59 @@ html {
   cursor: pointer;
 }
 
-.product_info .note{
-    color: rgba(255, 255, 255, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.6rem;
+.product_info .note {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
 }
 
-.product_info .note b{
-    color: rgba(255, 255, 255, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 2.8rem;
+.product_info .note b {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.8rem;
 }
 
 /* end product */
 
 /* start Description */
-.title{
-    display: flex;
-    gap: 2rem;    
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-    z-index: -10;    
+.title {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+}
+
+.title h3 {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.8rem;
   position: relative;
 }
 
-.title h3{
-    color: #FFF;
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 2.8rem;
-    position: relative;
+.title > h3:hover {
+  color: #fb8f2c;
+  cursor: pointer;
 }
 
-.title h3:first-child:before{
+.title h3:first-child {
+  color: #fb8f2c;
+}
+
+.title h3:first-child:before {
   content: "";
-  background-color: #FB8F2C;
+  background-color: #fb8f2c;
   height: 1px;
   bottom: -10px;
   left: 0;
@@ -235,11 +269,11 @@ html {
   position: absolute;
 }
 
-.title::before{
+.title::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.8);
   display: block;
-  height: 1px;  
+  height: 1px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -259,21 +293,21 @@ html {
     border-bottom: rgba(255, 255, 255, 0.80) 0.5px solid;
 } */
 
-.title_content{
+.title_content {
   margin-top: 5rem;
 }
 
-.title_content p{
-    color:  rgba(255, 255, 255, 0.80);
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.6rem; 
+.title_content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
 }
 
-.title_content p:first-child{
-    margin-bottom: 3rem;
+.title_content p:first-child {
+  margin-bottom: 3rem;
 }
 /* end Description */
 
@@ -351,6 +385,10 @@ html {
   line-height: 2.6rem;
 }
 
+.order .item .button_price a:hover {
+  color: #fb8f2c;
+}
+
 .order .item .button_price p {
   color: #fff;
   font-family: "Libre Bodoni";
@@ -412,7 +450,7 @@ footer {
 }
 
 footer ul {
-  margin-top: 3rem;
+  margin-top: 2.4rem;
 }
 
 .usefull_link li,
@@ -420,6 +458,7 @@ footer ul {
 .follow_us li,
 .legal li {
   list-style: none;
+  margin-bottom: 1.6rem;
 }
 
 .usefull_link li a,
