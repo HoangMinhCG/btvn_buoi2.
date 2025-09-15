@@ -85,7 +85,9 @@ html {
 }
 
 /* end nav */
-
+.btn_mobile {
+  display: none;
+}
 /* start main */
 .cart_table {
   margin-top: 11.3rem;
@@ -212,7 +214,7 @@ table {
 }
 
 .table_btn .update button:hover,
-.table_btn > button:hover{
+.table_btn > button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -307,7 +309,7 @@ table tr{
   gap: 1rem;
 }
 
-.shipping .shipping_detail .change_address p{
+.shipping .shipping_detail .change_address p {
   margin-bottom: 3.2rem;
 }
 
@@ -315,22 +317,22 @@ table tr{
   height: 26px;
 }
 
-.australia{
+.australia {
   /* margin-top: 3.2rem; */
 }
 
-#address{
+#address {
   background-color: #111114;
   color: #fff;
   border: none;
   margin-bottom: 3.2rem;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3) ;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1rem 0;
   width: 32rem;
 }
 
-#address option{
+#address option {
   background-color: #fff;
   color: #111114;
   border: none;
