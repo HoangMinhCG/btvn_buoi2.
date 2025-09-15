@@ -270,6 +270,17 @@ header .img {
   cursor: pointer;
 }
 
+.order .item .price h2 a{
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .order .item .price p {
   color: #fff;
   font-family: "Plus Jakarta Sans";
@@ -335,6 +346,15 @@ header .img {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
+}
+
+.explore p a{
+  color: var(--Dark-Orange, #fb8f2c);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-decoration: none;
 }
 
 .explore img {
@@ -531,6 +551,15 @@ header .img {
   font-size: 3rem;
   font-weight: 500;
 }
+
+.col .itemm .meal p a{
+  color: #fff;
+  text-align: left;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  text-decoration: none;
+}
 /* end choose food */
 
 /* start visit */
@@ -569,6 +598,7 @@ header .img {
 .visit .img .img_col_right {
   width: 32%;
 }
+
 
 .visit .img .img_col_left img,
 .visit .img .img_col_center img,
@@ -773,6 +803,18 @@ header .img {
   line-height: 2.6rem;
   background-color: rgba(251, 143, 44, 0.8);
   padding: 0.8rem 3rem;
+  border: none;
+}
+
+.offers_img_discount button a{
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  /* backgrou nd-color: rgba(251, 143, 44, 0.8); */
+  padding: 0.8rem 3rem;
+  text-decoration: none;
 }
 
 .offers .offers_content {
@@ -802,6 +844,17 @@ header .img {
   line-height: 3.4rem;
   margin-bottom: 1.6rem;
   margin-top: 1.1rem;
+}
+
+.offer_item .offer .offer_detail h3 a{
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  margin-bottom: 1.6rem;
+  margin-top: 1.1rem;
+  text-decoration: none;
 }
 
 .offer_item .offer .offer_detail p {
