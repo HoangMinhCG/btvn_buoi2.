@@ -10,7 +10,7 @@ html {
   color: #fffeff;
 }
 
-body{
+body {
   overscroll-behavior: none;
 }
 
@@ -486,7 +486,7 @@ header .img {
   text-transform: capitalize;
 }
 
-.sub_selection{
+.sub_selection {
   display: none;
 }
 
@@ -898,7 +898,7 @@ header .img {
   line-height: 4rem;
 }
 
-.sub_offer_item{
+.sub_offer_item {
   display: none;
 }
 /* end Daily Offers */
@@ -1037,7 +1037,7 @@ header .img {
   margin-bottom: 6rem;
 }
 
-.articles .article_content, 
+.articles .article_content,
 .articles .article_content2 {
   display: flex;
   gap: 3rem;
@@ -1078,7 +1078,7 @@ header .img {
 }
 
 .articles .article_content .article_detail h3 a,
-.articles .article_content2 .article_detail h3 a{
+.articles .article_content2 .article_detail h3 a {
   color: #fff;
   font-family: "Libre Bodoni";
   font-size: 3rem;
@@ -1132,7 +1132,7 @@ header .img {
   color: #fb8f2c;
 }
 
-.sub_article_content{
+.sub_article_content {
   display: none;
 }
 /* end articles */
