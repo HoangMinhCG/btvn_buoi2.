@@ -10,7 +10,7 @@ html {
   color: #fffeff;
 }
 
-body{
+body {
   overscroll-behavior: none;
 }
 
@@ -311,6 +311,17 @@ header p {
   padding-bottom: 3rem;
 }
 
+.email > input {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  padding: 0.8rem 1.2rem;
+  background: none;
+  border: none;
+}
+
 .email img {
   height: 2.5rem;
   width: auto;
@@ -337,14 +348,13 @@ footer {
   width: 20%;
 }
 
-.footer_logo > a{
+.footer_logo > a {
   width: 30%;
 }
 
-.footer_logo h3 a{
+.footer_logo h3 a {
   text-decoration: none;
   color: #fff;
-
 }
 
 .footer_logo h3 {
