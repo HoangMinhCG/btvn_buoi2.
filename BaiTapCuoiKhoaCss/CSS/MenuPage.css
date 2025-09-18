@@ -10,7 +10,7 @@ html {
   color: #fffeff;
 }
 
-body{
+body {
   overscroll-behavior: none;
 }
 
@@ -141,9 +141,9 @@ body{
   cursor: pointer;
 }
 
-.order .item h2 a{
+.order .item h2 a {
   margin: 2rem 0;
-  color: #fff; 
+  color: #fff;
   text-decoration: none;
 }
 
@@ -207,6 +207,8 @@ body{
   width: 100%;
   margin-top: 8rem;
   padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .poster .box {
@@ -282,14 +284,13 @@ footer {
   width: 20%;
 }
 
-.footer_logo > a{
+.footer_logo > a {
   width: 30%;
 }
 
-.footer_logo h3 a{
+.footer_logo h3 a {
   text-decoration: none;
   color: #fff;
-
 }
 
 .footer_logo h3 {
