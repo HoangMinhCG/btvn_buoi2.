@@ -1,5 +1,4 @@
-* ---------------------------- */
-* {
+* ---------------------------- */ * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +10,7 @@ html {
   color: #fffeff;
 }
 
-body{
+body {
   overscroll-behavior: none;
 }
 
@@ -290,7 +289,7 @@ table {
 }
 
 .sub_cart_table,
-.btn_mobile{
+.btn_mobile {
   display: none;
 }
 /* tr th:first-child,
@@ -499,7 +498,7 @@ footer {
   width: 20%;
 }
 
-.footer_logo > h3 a{
+.footer_logo > h3 a {
   color: #fff;
   text-decoration: none;
 }
