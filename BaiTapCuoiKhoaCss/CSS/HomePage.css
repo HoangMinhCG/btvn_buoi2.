@@ -1196,6 +1196,7 @@ header .img {
   line-height: 2.6rem;
   padding: 0.8rem 1.2rem;
   background: none;
+  border: none;
 }
 
 .newsletter .add_email .add_email_detail p:hover,
