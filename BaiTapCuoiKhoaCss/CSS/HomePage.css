@@ -1077,6 +1077,16 @@ header .img {
   line-height: 4rem;
 }
 
+.articles .article_content .article_detail h3 a,
+.articles .article_content2 .article_detail h3 a{
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-decoration: none;
+}
+
 .articles .article_content .article_detail .p2,
 .articles .article_content2 .article_detail .p2 {
   color: rgba(255, 255, 255, 0.8);

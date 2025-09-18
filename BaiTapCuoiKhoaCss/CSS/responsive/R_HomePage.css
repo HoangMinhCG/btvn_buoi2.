@@ -69,7 +69,7 @@
     transition: left 0.3s;
   }
 
-  .menu > button{
+  .menu > button {
     margin: 1rem 15rem 1rem 0;
     text-align: right;
     display: block;
@@ -535,6 +535,16 @@
   .articles .article_content .article_detail h3,
   .articles .sub_article_content .article_detail h3 {
     font-size: 2.4rem;
+  }
+
+  .articles .article_content .article_detail h3 a,
+  .articles .sub_article_content .article_detail h3 a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Libre Bodoni";
+    font-weight: 700;
+    line-height: 4rem;
   }
 
   .articles .article_content .article_detail .p2,
