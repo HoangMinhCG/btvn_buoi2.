@@ -10,6 +10,10 @@ html {
   color: #fffeff;
 }
 
+body{
+  overscroll-behavior: none;
+}
+
 /* common */
 .container {
   width: 1440px;
@@ -103,6 +107,7 @@ header .content p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
+  margin-bottom: 1rem;
 }
 
 header .content .last_child {
@@ -392,7 +397,7 @@ header .img {
   line-height: 3.4rem;
   text-transform: capitalize;
   margin-bottom: 1rem;
-} 
+}
 
 .calendar .address p {
   color: #fff;
@@ -479,6 +484,10 @@ header .img {
   font-weight: 500;
   line-height: 7.4rem;
   text-transform: capitalize;
+}
+
+.sub_selection{
+  display: none;
 }
 
 .choose_food .selection ul {
@@ -619,6 +628,11 @@ header .img {
 .visit .img .img_col_left img:first-child,
 .visit .img .img_col_right img:first-child {
   margin-bottom: 3rem;
+}
+
+.subb_img,
+.sub_btn {
+  display: none;
 }
 /* end visit */
 
@@ -883,6 +897,10 @@ header .img {
   font-weight: 500;
   line-height: 4rem;
 }
+
+.sub_offer_item{
+  display: none;
+}
 /* end Daily Offers */
 
 /* start slogun */
@@ -1019,7 +1037,8 @@ header .img {
   margin-bottom: 6rem;
 }
 
-.articles .article_content {
+.articles .article_content, 
+.articles .article_content2 {
   display: flex;
   gap: 3rem;
 }
@@ -1029,15 +1048,18 @@ header .img {
   margin-bottom: 4rem;
 }
 
-.articles .article_content img {
+.articles .article_content img,
+.articles .article_content2 img {
   width: 50%;
 }
 
-.articles .article_content .article_detail {
+.articles .article_content .article_detail,
+.articles .article_content2 .article_detail {
   width: 50%;
 }
 
-.articles .article_content .article_detail p:nth-child(1) {
+.articles .article_content .article_detail p:nth-child(1),
+.articles .article_content2 .article_detail p:nth-child(1) {
   color: #fff;
   font-family: "Plus Jakarta Sans";
   font-size: 1.6rem;
@@ -1046,7 +1068,8 @@ header .img {
   margin-bottom: 2rem;
 }
 
-.articles .article_content .article_detail h3 {
+.articles .article_content .article_detail h3,
+.articles .article_content2 .article_detail h3 {
   color: #fff;
   font-family: "Libre Bodoni";
   font-size: 3rem;
@@ -1054,7 +1077,8 @@ header .img {
   line-height: 4rem;
 }
 
-.articles .article_content .article_detail .p2 {
+.articles .article_content .article_detail .p2,
+.articles .article_content2 .article_detail .p2 {
   color: rgba(255, 255, 255, 0.8);
   font-family: "Plus Jakarta Sans";
   font-size: 1.8rem;
@@ -1080,7 +1104,8 @@ header .img {
   line-height: 2.6rem;
 }
 
-.article_content .read {
+.article_content .read,
+.article_content2 .read {
   display: inline;
   color: #fff;
   font-family: "Plus Jakarta Sans";
@@ -1091,9 +1116,14 @@ header .img {
   padding-bottom: 1rem;
 }
 
-.article_content .read:hover {
+.article_content .read:hover,
+.article_content2 .read:hover {
   cursor: pointer;
   color: #fb8f2c;
+}
+
+.sub_article_content{
+  display: none;
 }
 /* end articles */
 
@@ -1172,6 +1202,15 @@ footer {
   width: 20%;
 }
 
+.footer_logo > a {
+  width: 30%;
+}
+
+.footer_logo h3 a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .footer_logo h3 {
   font-size: 2.5rem;
   margin-top: 1.5rem;
@@ -1179,7 +1218,7 @@ footer {
 }
 
 .footer_logo img {
-  width: 30%;
+  width: 100%;
   height: 30%;
 }
 
@@ -1226,9 +1265,9 @@ footer ul {
   line-height: 2.6rem; /* 162.5% */
 }
 
-.contact_info li:nth-child(2) a {
+/* .contact_info li:nth-child(2) a {
   color: #fb8f2c;
-}
+} */
 
 .follow_us li a {
   color: rgba(255, 255, 255, 0.8);

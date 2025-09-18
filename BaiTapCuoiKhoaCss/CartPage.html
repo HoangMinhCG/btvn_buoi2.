@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CartPage</title>
     <link rel="stylesheet" href="./CSS/CartPage.css" />
+    <link rel="stylesheet" href="./CSS/responsive/R_CartPage.css" />
     <!-- <link rel="stylesheet" href="./CSS/responsive/R_CartPage.css" /> -->
     <link
       rel="stylesheet"
@@ -101,6 +102,7 @@
           </button>
           <input type="checkbox" id="toggle-menu" hidden />
           <nav class="menu">
+            <button><label for="toggle-menu"><i class="fa-solid fa-xmark"></i></label></button>
             <ul class="nav_list_sub">
               <li><a href="./HomePage.html">Home</a></li>
               <li><a href="./MenuPage.html">Menu</a></li>
@@ -109,7 +111,7 @@
               <li><a href="#!">Contact</a></li>
             </ul>
           </nav>
-          <label for="toggle-menu" class="overplay"></label>
+          <label for="toggle-menu" class="overlay"></label>
         </div>
 
         <!-- nav pc -->
@@ -122,7 +124,9 @@
         </ul>
 
         <div class="nav_logo">
-          <img src="./IMG/About us/nav_logo.png" alt="" />
+          <a href="./HomePage.html"
+            ><img src="./IMG/About us/nav_logo.png" alt=""
+          /></a>
           <!-- <p>Xin chào<object data="" type=""></object></p> -->
         </div>
 
@@ -136,6 +140,72 @@
 
     <!-- start main -->
     <main class="container">
+      <!-- start sub cart table -->
+      <div class="sub_cart_table">
+        <div class="item">
+          <div class="img">
+            <img src="./IMG/CartPage/delete" alt="" />
+          </div>
+          <div class="food">
+            <h3>Food</h3>
+            <p>Crispy chicken breasts</p>
+          </div>
+          <div class="price">
+            <h3>Price</h3>
+            <p>$24.99</p>
+          </div>
+
+          <div class="quantity">
+            <h3>Quantity</h3>
+            <div class="btn">
+              <button class="minus">-</button>
+              <span>1</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <div class="subtotal">
+            <h3>Subtotal</h3>
+            <p>$24.99</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+            <img src="./IMG/CartPage/delete" alt="" />
+          </div>
+          <div class="food">
+            <h3>Food</h3>
+            <p>Crispy chicken breasts</p>
+          </div>
+          <div class="price">
+            <h3>Price</h3>
+            <p>$59.00</p>
+          </div>
+
+          <div class="quantity">
+            <h3>Quantity</h3>
+            <div class="btn">
+              <button class="minus">-</button>
+              <span>1</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <div class="subtotal">
+            <h3>Subtotal</h3>
+            <p>$59.00</p>
+          </div>
+        </div>
+
+        <div class="table_btn">
+          <div class="update">
+            <button>Copon code</button>
+            <button>Apply coupon</button>
+          </div>
+          <button>Update Cart</button>
+        </div>
+      </div>
+      <!-- end sub cart table -->
+
       <!-- start cart table -->
       <div class="cart_table">
         <table width="100%" cellspacing="0">
@@ -243,27 +313,29 @@
     <!-- start footer -->
     <footer class="container">
       <div class="footer_logo">
-        <img src="./IMG/About us/nav_logo.png" alt="" />
-        <h3>WowWraps</h3>
+        <a href="./HomePage.html"
+          ><img src="./IMG/About us/nav_logo.png" alt=""
+        /></a>
+        <h3><a href="./HomePage.html">WowWraps</a></h3>
       </div>
 
       <div class="usefull_link">
         <h3>Usefull Link</h3>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="./HomePage.html">Home</a></li>
           <li><a href="./AboutUs.html">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Booking</a></li>
-          <li><a href="#">Menu</a></li>
+          <li><a href="#!">Services</a></li>
+          <li><a href="#!">Booking</a></li>
+          <li><a href="./MenuPage.html">Menu</a></li>
         </ul>
       </div>
 
       <div class="contact_info">
         <h3>Contact Info</h3>
         <ul>
-          <li><a href="#">Silk St, Barbican, London EC2Y 8DS, UK</a></li>
-          <li><a href="#">info@example.com</a></li>
-          <li><a href="#">800-123-45-678</a></li>
+          <li><a href="#!">Silk St, Barbican, London EC2Y 8DS, UK</a></li>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><a href="tel:800-123-45-678">800-123-45-678</a></li>
         </ul>
       </div>
 

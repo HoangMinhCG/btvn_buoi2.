@@ -10,6 +10,10 @@ html {
   color: #fffeff;
 }
 
+body{
+  overscroll-behavior: none;
+}
+
 /* common */
 .container {
   width: 1440px;
@@ -429,6 +433,16 @@ footer {
   width: 20%;
 }
 
+.footer_logo > a{
+  width: 30%;
+}
+
+.footer_logo h3 a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
 .footer_logo h3 {
   font-size: 2.5rem;
   margin-top: 1.5rem;
@@ -436,7 +450,7 @@ footer {
 }
 
 .footer_logo img {
-  width: 30%;
+  width: 100%;
   height: 30%;
 }
 
@@ -485,9 +499,9 @@ footer ul {
   line-height: 2.6rem; /* 162.5% */
 }
 
-.contact_info li:nth-child(2) a {
+/* .contact_info li:nth-child(2) a {
   color: #fb8f2c;
-}
+} */
 
 .follow_us li a {
   color: rgba(255, 255, 255, 0.8);

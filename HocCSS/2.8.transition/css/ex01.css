@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -22,16 +22,19 @@
     margin-bottom: 15px;
 }
 
-.overplay{
-    position: absolute;
-    inset: 0;
-    /* background-color: #eed4d481; */
-    background-color: green;
-    z-index: 99;
-    /* display: none; */
-    /* opacity: 0;*/
-    visibility: hidden;
-    /* transition-property: ; */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+  background: #00000075;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+#toggle-menu:checked ~ .overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 span:active{
@@ -40,10 +43,9 @@ span:active{
 
 #toggle-menu:checked + .menu {
     left: 0;
-    z-index: 100;
-    /* display: block; */
+    z-index: 100;    
 }
-
+ 
 #toggle-menu:checked ~ span{
     display: block;
     z-index: 99;
@@ -72,4 +74,46 @@ span:active{
 .nav_list_sub li a{
     text-decoration: none;
     color: #fff;
+} */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  bottom: 0;
+  z-index: 100;
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  transition: left 0.3s;
+}
+.menu .menu-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#toggle-menu:checked + .menu {
+  left: 0;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+  background: #00000075;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+#toggle-menu:checked ~ .overlay {
+  opacity: 1;
+  visibility: visible;
 }

@@ -101,6 +101,7 @@
           </button>
           <input type="checkbox" id="toggle-menu" hidden/>
           <nav class="menu">
+            <button><label for="toggle-menu"><i class="fa-solid fa-xmark"></i></label></button>
             <ul class="nav_list_sub">
               <li><a href="./HomePage.html">Home</a></li>
               <li><a href="./MenuPage.html">Menu</a></li>
@@ -109,7 +110,7 @@
               <li><a href="#!">Contact</a></li>
             </ul>
           </nav>
-          <label for="toggle-menu" class="overplay"></label>
+          <label for="toggle-menu" class="overlay"></label>
         </div>
 
         <!-- nav pc -->
@@ -122,7 +123,7 @@
         </ul>
 
         <div class="nav_logo">
-          <img src="./IMG/About us/nav_logo.png" alt=""/>
+          <a href="./HomePage.html"><img src="./IMG/About us/nav_logo.png" alt=""/></a>
           <!-- <p>Xin chào<object data="" type=""></object></p> -->
         </div>
 
@@ -292,14 +293,29 @@
         <h2>Choose & Taste What You Like </h2>
         <p>A list of top Bangladeshi food including mains, drinks, and deserts you must try while in Bangladesh, for an authentic experience. Check now!</p>
         <div class="selection">
-          <ul>
+          <ul>            
             <li><a href="#!">All</a></li>
             <li><a href="#!">Appetizer</a></li>
-            <li><a href="#!">Soup</a></li>
+            <li><a href="#!">Soup</a></li>          
             <li><a href="#!">Dessert</a></li>
             <li><a href="#!">Drinks</a></li>
           </ul>
         </div>
+
+        <div class="sub_selection">
+          <ul>            
+            <div class="row1">
+              <li><a href="#!">All</a></li>
+              <li><a href="#!">Appetizer</a></li>
+              <li><a href="#!">Soup</a></li>    
+            </div>      
+            <div class="row2">
+              <li><a href="#!">Dessert</a></li>
+              <li><a href="#!">Drinks</a></li>
+            </div>
+          </ul>
+        </div>
+
         <span class="line"></span>
         <div class="list">
           <div class="col">
@@ -393,6 +409,13 @@
             <img src="./IMG/HomePage/visit5.png" alt="">
           </div>
         </div>
+
+        <div class="subb_img">
+            <img src="./IMG/HomePage/visit1.png" alt="">
+        </div>
+        <div class="sub_btn">
+          <img src="./IMG/HomePage/Group 246.png" alt="">
+        </div>
        </div>
       <!-- end visit -->
 
@@ -455,18 +478,42 @@
                   <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
                 </div>
               </div>
-              <p>$42</p>
+              <p>$42</p>              
             </div>
+            <!-- mobile -->
+            <div class="sub_offer_item">
+              <div class="offer_mobile">
+                  <img src="./IMG/HomePage/offer2.png" alt="">
+                  <div class="foodd">
+                    <h3><a href="./ProductDetailReview.html">Almond baked Brie</a></h3>
+                    <p>$38</p>
+                  </div>
+                  <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
+               </div>
+            </div>
+               
             <div class="offer_item">
               <div class="offer">
                 <img src="./IMG/HomePage/offer3.png" alt="">
                 <div class="offer_detail">
-                  <h3><a href="./ProductDetailReview.html">Almond baked Brie</a></h3>
+                  <h3><a href="./ProductDetailReview.html">Tuscan Flatbread</a></h3>
                   <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
                 </div>
               </div>
-              <p>$38</p>
+              <p>$49</p>              
             </div>
+            <!-- mobile -->
+            <div class="sub_offer_item">
+              <div class="offer_mobile">
+                  <img src="./IMG/HomePage/offer3.png" alt="">
+                  <div class="foodd">
+                    <h3><a href="./ProductDetailReview.html">Spicy Club</a></h3>
+                    <p>$42</p>
+                  </div>
+                  <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
+               </div>
+            </div>
+
             <div class="offer_item">
               <div class="offer">
                 <img src="./IMG/HomePage/offer4.png" alt="">
@@ -475,7 +522,19 @@
                   <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
                 </div>
               </div>
-              <p>$49</p>
+              <p>$49</p>              
+            </div>
+
+            <!-- mobile -->
+            <div class="sub_offer_item">
+              <div class="offer_mobile">
+                  <img src="./IMG/HomePage/offer4.png" alt="">
+                  <div class="foodd">
+                    <h3><a href="./ProductDetailReview.html">Spicy Club</a></h3>
+                    <p>$42</p>
+                  </div>
+                  <p>Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
+               </div>
             </div>
           </div>
         </div>
@@ -558,7 +617,7 @@
           </div>          
         </div>
 
-        <div class="article_content margin">
+        <div class="article_content2 margin">
           <div class="article_detail">
             <p>August 6, 2022 </p>
             <h3>Chicken Soup With Spring Veggies Aand Pasta</h3>
@@ -571,8 +630,25 @@
           </div>          
           <img src="./IMG/HomePage/article2.png" alt="article2">
         </div>
+
+        <!-- sub article -->
+         <div class="sub_article_content">
+          <img src="./IMG/HomePage/article2.png" alt="article1">
+          <div class="article_detail">
+            <p>August 6, 2022 </p>
+            <h3>The Most Expensive Cup of Coffee in the Usa</h3>
+            <p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauatium, totam rem aperiam perspiciatis unde omnis.</p>
+            <div class="statistical">
+              <p>Comments 165</p>
+              <p>View 1265</p>
+            </div>
+          <p class="read">Read Now</p>
+          </div>          
+        </div>
+
+
         <div class="explore">
-          <p>Explore All Food</p>
+          <p><a href="./MenuPage.html">Explore All Food</a></p>
           <img src="./IMG/HomePage/row.png" alt="">
         </div>
        </div>
@@ -600,18 +676,18 @@
     <!-- start footer -->
     <footer class="container">
       <div class="footer_logo">
-        <img src="./IMG/About us/nav_logo.png" alt="" />
-        <h3>WowWraps</h3>
+        <a href="./HomePage.html"><img src="./IMG/About us/nav_logo.png" alt="" /></a>
+        <h3><a href="./HomePage.html">WowWraps</a></h3>
       </div>
 
-      <div class="usefull_link">
+            <div class="usefull_link">
         <h3>Usefull Link</h3>
         <ul>
-          <li><a href="#!">Home</a></li>
+          <li><a href="./HomePage.html">Home</a></li>
           <li><a href="./AboutUs.html">About Us</a></li>
           <li><a href="#!">Services</a></li>
           <li><a href="#!">Booking</a></li>
-          <li><a href="#!">Menu</a></li>
+          <li><a href="./MenuPage.html">Menu</a></li>
         </ul>
       </div>
 
@@ -619,8 +695,8 @@
         <h3>Contact Info</h3>
         <ul>
           <li><a href="#!">Silk St, Barbican, London EC2Y 8DS, UK</a></li>
-          <li><a href="#!">info@example.com</a></li>
-          <li><a href="#!">800-123-45-678</a></li>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><a href="tel:800-123-45-678">800-123-45-678</a></li>
         </ul>
       </div>
 
