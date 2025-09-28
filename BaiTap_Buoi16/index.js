@@ -50,7 +50,7 @@ if (electronic < 0) {
 }
 
 console.log("Bài 2:");
-let n2 = 23;
+let n2 = 7;
 if (n2 < 2) {
   console.log("Số đã nhập không phải là số nguyên tố.");
 } else {
@@ -62,6 +62,40 @@ if (n2 < 2) {
     console.log("Số đã nhập không phải là số nguyên tố.");
   }
 }
+
+// 10000000000
+// const isSNT = (n) => {
+//   if (n < 2) return true;
+
+//   //i = 5
+//   for (let i = 2; i <= Math.sqrt(n); ++i) {
+//     // 5 % 5
+//     if (n % i === 0) return false;
+//   }
+
+//   return true;
+// };
+
+// console.log(Math.sqrt(10000000000));
+
+// let result = false;
+// const n = 90;
+
+// if (n < 2) result = true;
+// else {
+//   let ok = false;
+//   for (let i = 2; i <= Math.sqrt(n); ++i) {
+//     // 5 % 5
+//     if (n % i === 0) {
+//       ok = true;
+//     }
+//   }
+
+//   if (!ok) result = true;
+// }
+//i = 5
+
+// console.log(result);
 
 console.log("Bài 3:");
 let n3 = 10;
@@ -127,7 +161,6 @@ console.log("Tổng số chẵn là: ", tongsochan);
 console.log("Tổng số lẻ là: ", tongsole);
 
 console.log("Bài 6:");
-let table = "";
 let row = "";
 for (let i = 1; i <= 8; i++) {
   if (i % 2 == 0) {
@@ -152,8 +185,35 @@ for (let i = 1; i <= 8; i++) {
     row = row + "</tr>";
   }
 }
+
 let html = `
-    <table border="1" width="100%" height="900px">      
-      ${row}                 
+    <table border="1" width="100%" height="900px">
+      ${row}
     </table>`;
 document.body.innerHTML = html;
+
+// let test = "<div class='parent'>";
+
+// for (let i = 1; i <= 8; ++i) {
+//   for (let j = 1; j <= 8; ++j) {
+//     if ((i + j) % 2 === 0) test += "<div class='box'></div>";
+//     else test += "<div class='box active'></div>";
+//   }
+// }
+
+// test += "</div>";
+
+// document.body.innerHTML = test;
+
+console.log("Bài 8:");
+let triangle = "";
+let n8 = 5;
+let bien = 0;
+for (let i = 1; i <= n8; i++) {
+  for (let j = 1; j <= i; j++) {
+    bien = bien + 1;
+    triangle = triangle + " " + bien;
+  }
+  triangle = triangle + "\n";
+}
+console.log(triangle);
