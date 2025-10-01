@@ -50,7 +50,7 @@ if (electronic < 0) {
 }
 
 console.log("Bài 2:");
-let n2 = 7;
+let n2 = 98;
 if (n2 < 2) {
   console.log("Số đã nhập không phải là số nguyên tố.");
 } else {
