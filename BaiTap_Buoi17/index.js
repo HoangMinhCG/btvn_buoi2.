@@ -1,16 +1,16 @@
-const users = ["User 1", "User 2", "User 3", "User 2", "User 4"];
-let newUsers = [];
-newUsers[newUsers.length] = users[0];
+// const users = ["User 1", "User 2", "User 3", "User 2", "User 4"];
+// let newUsers = [];
+// newUsers[newUsers.length] = users[0];
 
-for (let i = 1; i < users.length - 1; i++) {
-  for (let j = 0; j < newUsers.length - 1; j++) {
-    if (users[i] !== newUsers[j]) {
-      newUsers[newUsers.length] = users[i];
-      console.log(newUsers);
-    }
-  }
-}
-console.log(newUsers);
+// for (let i = 1; i < users.length - 1; i++) {
+//   for (let j = 0; j < newUsers.length - 1; j++) {
+//     if (users[i] !== newUsers[j]) {
+//       newUsers[newUsers.length] = users[i];
+//       console.log(newUsers);
+//     }
+//   }
+// }
+// console.log(newUsers);
 
 console.log("Bài 4:");
 const numbers4 = [5, 2, 1, 9, 8, 0];
