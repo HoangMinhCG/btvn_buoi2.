@@ -108,9 +108,9 @@ longestStringLength(strings);
 console.log(longestStringLength(strings).length);
 
 console.log("Bài 10:");
-const numbers10 = [20, 51, 2, 3, 1];
+const numbers10 = [20, 51, 2, 30, 1];
 function hasPrime(number) {
-  const result = number.filter(function (value) {
+  const result = number.some(function (value) {
     if (value >= 2) {
       if (value == 2 || value == 3 || value == 5 || value == 7) {
         // console.log("Số đã nhập là số nguyên tố.");
