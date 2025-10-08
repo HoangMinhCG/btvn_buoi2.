@@ -11,15 +11,6 @@ function hasNegative(number) {
     return value < 0;
   });
   return result;
-
-  // const result = number.forEach(function (value) {
-  //   if (value < 0) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // });
-  // return result;
 }
 hasNegative(numbers);
 console.log(hasNegative(numbers));
