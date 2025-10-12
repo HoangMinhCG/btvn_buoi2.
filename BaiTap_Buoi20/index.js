@@ -123,7 +123,7 @@ const posts = [
 // let mangKhongTrungLap = [];
 console.log(posts.tags);
 
-const a = posts.forEach(function (value) {
+const tagKhongTrung = posts.forEach(function (value) {
     value.tags.reduce(function(acc, cur){
       console.log(acc);      
       // console.log(cur);
@@ -134,5 +134,17 @@ const a = posts.forEach(function (value) {
   },[])
   // console.log(value.tags);
 });
-console.log(a);
+console.log(tagKhongTrung);
+
+const cmtUserTenAn = posts.forEach(function(value){
+  let a = value.comments.filter(function(value2){
+    // console.log(value2);
+    if(value2.user === 'An'){
+      return value2;
+    }    
+  })  
+  console.log(a); 
+})
+
+
 
