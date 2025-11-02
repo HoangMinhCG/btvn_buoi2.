@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>BaiTap_Buoi26</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+      .up {
+        color: green;
+      }
+      .down {
+        color: red;
+      }
+      .up,
+      .down {
+        font-size: 0.85rem;
+        cursor: pointer;
+      }
+      .selected {
+        border: 1px dashed green;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid red;
+      }
+      ul li {
+        margin: 10px 0;
+        padding: 5px 10px;
+        position: relative;
+      }
+
+      .box {
+        background-color: gray;
+        display: none;
+        width: auto;
+        position: absolute;
+        top: 0;
+      }
+
+      .box p {
+        padding: 10px 20px;
+      }
+
+      .box p:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .modal {
+        background-color: gray;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+        position: relative;
+        top: -150px;
+        z-index: 100;
+        display: none;
+      }
+
+      .modal input {
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      .modal button {
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0px 10px;
+      }
+
+      .overplay {
+        position: relative;
+        top: -400px;
+        right: 0;
+        left: 0;
+        bottom: -500px;
+        width: 100vw;
+        height: 120vh;
+        background: rgba(0, 0, 0, 0.5); /* màu xám mờ */
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 99; /* nằm trên cùng */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><span>Item 1</span> <span class="up">Up</span> <span class="down">Down</span></li>
+      <li><span>Item 2</span> <span class="up">Up</span> <span class="down">Down</span></li>
+      <li><span>Item 3</span> <span class="up">Up</span> <span class="down">Down</span></li>
+      <li><span>Item 4</span> <span class="up">Up</span> <span class="down">Down</span></li>
+      <li><span>Item 5</span> <span class="up">Up</span> <span class="down">Down</span></li>
+    </ul>
+    <div class="box">
+      <p class="rename">Đổi tên</p>
+      <p class="remove">Xoá</p>
+    </div>
+
+    <div class="modal">
+      <input type="text" name="" id="input" value="" />
+      <button class="save">Lưu</button>
+    </div>
+
+    <div class="overplay"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

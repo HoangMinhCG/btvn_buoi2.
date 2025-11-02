@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>BaiTap_Buoi25</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- <style>
+      .table input,
+      .table button {
+        width: 90%;
+      }
+      tr td:last-of-type {
+        display: block;
+      }
+
+      .line {
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: rgb(33, 33, 33);
+        margin: 10px 0;
+      }
+      .btn {
+        margin-top: 5px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="box">
+      <h1>DANH SÁCH SẢN PHẨM</h1>
+      <table
+        class="js-table border"
+        width="100%"
+        cellpadding="5px"
+        cellspacing="0"
+      >
+        <tr class="border p-[5px]" class="border p-[5px]">
+          <th class="border p-[5px] p-[5px]">STT</th>
+          <th class="border p-[5px]" width="50%">Tên sản phẩm</th>
+          <th class="border p-[5px]">Giá</th>
+          <th class="border p-[5px]">Thêm vào giỏ</th>
+        </tr>
+
+        <tr class="border p-[5px]">
+          <td class="border p-[5px]" class="border p-[5px]">1</td>
+          <td class="border p-[5px]">Sản phẩm 1</td>
+          <td class="border p-[5px]">1000</td>
+          <td class="border p-[5px]">
+            <input
+              class="border p-[5px]"
+              type="number"
+              value="1"
+              min="0"
+            /><br />
+            <button
+              class="js-btn border border-[#ccc] px-[12px] py-[8px] inline-block rounded-[8px] hover:bg-[#ccc] cursor-pointer transition-all duration-[2000]"
+            >
+              Thêm vào giỏ
+            </button>
+          </td>
+        </tr>
+
+        <tr class="border p-[5px]">
+          <td class="border p-[5px]">2</td>
+          <td class="border p-[5px]">Sản phẩm 2</td>
+          <td class="border p-[5px]">2000</td>
+          <td class="border p-[5px]">
+            <input
+              class="border p-[5px]"
+              type="number"
+              value="1"
+              min="0"
+            /><br />
+            <button
+              class="js-btn border border-[#ccc] px-[12px] py-[8px] inline-block rounded-[8px] hover:bg-[#ccc] cursor-pointer transition-all duration-[2000]"
+            >
+              Thêm vào giỏ
+            </button>
+          </td>
+        </tr>
+
+        <tr class="border p-[5px]">
+          <td class="border p-[5px]">3</td>
+          <td class="border p-[5px]">Sản phẩm 3</td>
+          <td class="border p-[5px]">3000</td>
+          <td class="border p-[5px]">
+            <input
+              class="border p-[5px]"
+              type="number"
+              value="1"
+              min="0"
+            /><br />
+            <button
+              class="js-btn border border-[#ccc] px-[12px] py-[8px] inline-block rounded-[8px] hover:bg-[#ccc] cursor-pointer transition-all duration-[2000]"
+            >
+              Thêm vào giỏ
+            </button>
+          </td>
+        </tr>
+
+        <tr class="border p-[5px]">
+          <td class="border p-[5px]">4</td>
+          <td class="border p-[5px]">Sản phẩm 4</td>
+          <td class="border p-[5px]">4000</td>
+          <td class="border p-[5px]">
+            <input
+              class="border p-[5px]"
+              type="number"
+              value="1"
+              min="0"
+            /><br />
+            <button
+              class="js-btn border border-[#ccc] px-[12px] py-[8px] inline-block rounded-[8px] hover:bg-[#ccc] cursor-pointer transition-all duration-[2000]"
+            >
+              Thêm vào giỏ
+            </button>
+          </td>
+        </tr>
+      </table>
+
+      <h2>GIỎ HÀNG</h2>
+      <p>Giỏ hàng không có sản phẩm</p>
+      <table class="js-cart" width="100%" cellpadding="5px" cellspacing="0">
+        <tr>
+          <th class="border">STT</th>
+          <th class="border">Tên sản phẩm</th>
+          <th class="border">Giá</th>
+          <th class="border">Số lượng</th>
+          <th class="border">Thành tiền</th>
+          <th class="border">Xoá</th>
+        </tr>
+
+        <tbody></tbody>
+
+        <tfoot>
+          <tr>
+            <td class="border p-[5px]" colspan="3">Tổng</td>
+            <td class="border p-[5px]">
+              <input type="number" value="1" value="1" min="0" />
+            </td>
+            <td class="border p-[5px]" colspan="2">6000</td>
+          </tr>
+        </tfoot>
+      </table>
+      <span class="line"> </span>
+      <div class="btn mt-[10px]">
+        <button
+          class="js-btn-update border border-[#ccc] px-[12px] py-[8px] inline-block rounded-[8px] hover:bg-[#ccc] cursor-pointer transition-all duration-[2000]"
+        >
+          Cập nhật giỏ hàng
+        </button>
+        <button
+          class="js-btn-removeAll border border-[#ccc] px-[12px] py-[8px] inline-block rounded-[8px] hover:bg-[#ccc] cursor-pointer transition-all duration-[2000]"
+        >
+          Xoá giỏ hàng
+        </button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

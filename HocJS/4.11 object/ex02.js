@@ -38,18 +38,46 @@
 // obj1.concat(obj2);
 // console.log(obj1);
 
-const queryString = "kw=Học+F8&status=active&category=1&category=2";
-const array = queryString.split("&");
-console.log(array);
-const query = {};
-array.forEach((item) => {
-  const itemArr = item.split("=");
-  const key = itemArr[0];
-  const value = itemArr[1];
-  if (!query[key]) {
-    query[key] = value.replaceAll("+", "");
-  } else {
-    query[key] = [query[key]];
+// const queryString = "kw=Học+F8&status=active&category=1&category=2";
+// const array = queryString.split("&");
+// console.log(array);
+// const query = {};
+// array.forEach((item) => {
+//   const itemArr = item.split("=");
+//   const key = itemArr[0];
+//   const value = itemArr[1];
+//   if (!query[key]) {
+//     query[key] = value.replaceAll("+", "");
+//   } else {
+//     query[key] = [query[key]];
+//   }
+// });
+// console.log(query);
+
+const f8 = {
+  start:function(value){
+    let result = value;
+    return{
+      add(value){
+        result+=value;
+        return this;
+      },
+      minus(value){
+        result -= value;
+        return this;
+      },
+      multi(value){
+        result *= value;
+        return this;
+      },
+      divi(value){
+        result /= value;
+        return this;
+      },
+      get(){        
+        return result;
+      },
+    }
   }
-});
-console.log(query);
+}
+f8.start(2).add(8)
