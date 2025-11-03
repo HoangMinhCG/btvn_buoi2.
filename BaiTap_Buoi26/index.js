@@ -80,8 +80,9 @@ rename.addEventListener("click", (e) => {
 save.addEventListener("click", (e) => {
   // console.log(e.target.parentElement.previousElementSibling);
   console.log(selectedLi.children[0].textContent);
-  selectedLi.children[0].textContent = input.value
-  
+  selectedLi.children[0].textContent = input.value;
+  overplay.style.display = "none";
+  modal.style.display = "none";
 });
 
 overplay.addEventListener("click", (e) => {
