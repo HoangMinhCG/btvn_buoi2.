@@ -80,7 +80,7 @@ rename.addEventListener("click", (e) => {
 save.addEventListener("click", (e) => {
   // console.log(e.target.parentElement.previousElementSibling);
   console.log(selectedLi.children[0].textContent);
-  selectedLi.children[0].textContent.innerHTML = input.value
+  selectedLi.children[0].textContent = input.value
   
 });
 
