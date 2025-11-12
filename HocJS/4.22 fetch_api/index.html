@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      .btn {
+        margin: 10px 0;
+      }
+
+      .btn .new:first-child {
+        background-color: yellow;
+        border: none;
+        padding: 7px 5px;
+      }
+
+      .btn .new:hover {
+        background-color: rgb(191, 191, 15);
+      }
+
+      .container {
+        border: 0.1px solid;
+        padding: 20px 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .option {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .option button {
+        padding: 5px 10px;
+        background-color: white;
+        border-radius: 50px;
+      }
+      .option .fix:hover,
+      .option .delete:hover,
+      .option .detail:hover {
+        background-color: rgba(128, 128, 128, 0.215);
+      }
+
+      .option .detail {
+        border-radius: 50px;
+        border: solid 1px rgb(144, 32, 32);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+      <h1>Blogs</h1>
+      <input type="text" placeholder="Search.." />
+      <button>Thêm mới</button>
+      <div class="btn">
+        <button class="new">Mới nhất</button>
+        <button class="old">Cũ nhất</button>
+      </div>
+      <div class="container">
+        <h2>The majestic waterfall thundered down the mountainside</h2>
+        <p>
+          Its waters cascading in a frothy torrent, sending mist into the air.
+          Rainbows danced in the spray, adding to the spectacle of nature's
+          power. It was a place where one could feel the heartbeat of the earth,
+          a reminder of the awe-inspiring beauty of the natural world.
+        </p>
+        <div class="option">
+          <button class="detail">Xem chi tiết</button>
+          <div class="function">
+            <button class="fix">Sửa</button>
+            <button class="delete">Xoá</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>The peaceful village square was a gathering place for locals</h2>
+        <p>
+          Beneath the shade of a towering oak tree, villagers gathered to chat
+          and share stories. Children played games on the cobblestone streets,
+          while elders watched with fond smiles. It was a place where time
+          seemed to move more slowly, and the simple joys of life were savored.
+        </p>
+        <div class="option">
+          <button class="detail">Xem chi tiết</button>
+          <div class="function">
+            <button class="fix">Sửa</button>
+            <button class="delete">Xoá</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>The ancient temple stood as a testament to human ingenuity</h2>
+        <p>
+          Its intricate carvings and towering columns spoke of a time when gods
+          walked among mortals. Inside, priests tended to sacred fires, their
+          chants filling the air with reverence. It was a place where the divine
+          felt close at hand, where prayers were offered and answered.
+        </p>
+        <div class="option">
+          <button class="detail">Xem chi tiết</button>
+          <div class="function">
+            <button class="fix">Sửa</button>
+            <button class="delete">Xoá</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <input type="file" id="image">
+    <button>Upload</button>
+    <div class="preview"></div>
+    <script src="./ex02.js"></script>
+    <!-- <script src="./ex03.js"></script> -->
+    <script src="./ex04.js"></script>
+  </body>
+</html>
